@@ -1,16 +1,18 @@
 {
   "analyticsCode": "",
   "basics": {
-    "name": "SeanVizM",
+    "name": "Sean Marasigan",
     "label": "Software Developer",
-    "main_label": "Developer",
+    "main_label": "Engineer",
     "secondary_main_label": "Software",
     "secondary_other_label": "AI/ML",
     "image": "/me_coding.png",
     "email": "vizmara@gmail.com",
+    "contact": "0917-123-4567",
     "url": "https://www.linkedin.com/in/seanvizm/",
-    "summary": "Pushing business concept to code, problem to solution and keeping things simple✨",
+    "summary": "Pushing business concept to code, problem to solution and keeping things simple. ✨",
     "theme": "mystical",
+    "last_updated": "October 11, 2025",
     "location": {
       "city": "",
       "region": "Calabarzon",
@@ -31,6 +33,13 @@
         "color": "#0A66C2",
         "username": "seanvizm",
         "url": "https://www.linkedin.com/in/seanvizm/"
+      },
+      {
+        "network": "Website",
+        "icon": "mdi:web",
+        "color": "#929AAB",
+        "username": "wwww",
+        "url": ""
       }
     ]
   },
