@@ -35,11 +35,11 @@
         "url": "https://www.linkedin.com/in/seanvizm/"
       },
       {
-        "network": "Website",
+        "network": "MySite",
         "icon": "mdi:web",
         "color": "#929AAB",
-        "username": "wwww",
-        "url": ""
+        "username": "www",
+        "url": "/"
       }
     ]
   },
