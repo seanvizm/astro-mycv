@@ -1,0 +1,183 @@
+{
+  "analyticsCode": "",
+  "basics": {
+    "name": "SeanVizM",
+    "label": "Software Developer",
+    "main_label": "Developer",
+    "secondary_main_label": "Software",
+    "secondary_other_label": "AI/ML",
+    "image": "/me_coding.png",
+    "email": "vizmara@gmail.com",
+    "url": "https://www.linkedin.com/in/seanvizm/",
+    "summary": "Pushing business concept to code, problem to solution and keeping things simple✨",
+    "theme": "mystical",
+    "location": {
+      "city": "",
+      "region": "Calabarzon",
+      "countryCode": "PH",
+      "country": "Philippines"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "icon": "mdi:github",
+        "color": "#929AAB",
+        "username": "seanvizm",
+        "url": "https://github.com/seanvizm/"
+      },
+      {
+        "network": "LinkedIn",
+        "icon": "mdi:linkedin",
+        "color": "#0A66C2",
+        "username": "seanvizm",
+        "url": "https://www.linkedin.com/in/seanvizm/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Cubewise AI",
+      "position": "Consultant / Fullstack Software Developer",
+      "location_type": "Remote - Europe Timezone",
+      "location": "Luxembourg, Luxembourg",
+      "url": "https://cubewise.ai/",
+      "startDate": "2022-08-08",
+      "endDate": null,
+      "summary": "",
+      "responsibilities": [
+        "Low-code Data Management System -- This is significantly a self-made generic tool that can be use practically in any type of business operation that could empower users to manage data exploration and virtualization effectively. Fill with custom fields and data relationships, dynamic page contents & menu navigation, and custom modules / virtual tables that can all be dynamically managed with its admin application, with built-in user roles & rights and packed with API automation & documentation which can really demonstrates the ability to build flexible and scalable solutions that reduce development time and effort.",
+        "Central Site Management -- This is a site administration tool to automate the full installation and other setup process for multi-tenant in a multi-client application in a \"software as a service\" runtime stack. This tool streamlined the configuration and database setup for new clients, significantly reducing manual effort and deployment time.",
+        "Data Table Generic Component -- This component allows for rapid creation of tables with various built-in functionalities, including automation for API data sources, form input, column filtering & sorting, pagination, charts & graphs view, bulk data importing, and CRUD operations, streamlining the development process and promoting code reusability."
+      ],
+      "skills": {
+        "PHP": "simple-icons:php",
+        "Laravel": "simple-icons:laravel",
+        "Livewire": "simple-icons:livewire",
+        "AlpineJS": "simple-icons:javascript",
+        "MySQL": "simple-icons:mysql",
+        "Python": "simple-icons:python",
+        "Django": "simple-icons:django",
+        "FastAPI": "simple-icons:fastapi",
+        "Docker": "mdi:docker",
+        "Docker-Compose": "mdi:docker",
+        "JavaScript": "simple-icons:javascript",
+        "HTML5": "simple-icons:html5",
+        "Bootstrap": "simple-icons:bootstrap",
+        "CSS3": "ri:css3-fill",
+        "Nginx": "simple-icons:nginx",
+        "Linux": "simple-icons:linux",
+        "Git": "mdi:git",
+        "GitHub": "mdi:github",
+        "API REST": "mdi:api",
+        "Postman": "simple-icons:postman",
+        "Swagger": "simple-icons:swagger"
+      }
+    }
+  ],
+  "education": [],
+  "certificates": [],
+  "skills": [
+    {
+      "name": "PHP",
+      "level": "Advanced",
+      "icon": "simple-icons:php"
+    },
+    {
+      "name": "Laravel",
+      "level": "Advanced",
+      "icon": "simple-icons:laravel"
+    },
+    {
+      "name": "Livewire",
+      "level": "Advanced",
+      "icon": "simple-icons:livewire"
+    },
+    {
+      "name": "MySQL",
+      "level": "Advanced",
+      "icon": "simple-icons:mysql"
+    },
+    {
+      "name": "JavaScript",
+      "level": "Advanced",
+      "icon": "simple-icons:javascript"
+    },
+    {
+      "name": "Docker",
+      "level": "Intermediate",
+      "icon": "mdi:docker"
+    },
+    {
+      "name": "Git",
+      "level": "Advanced",
+      "icon": "mdi:git"
+    },
+    {
+      "name": "API REST",
+      "level": "Advanced",
+      "icon": "mdi:api"
+    },
+    {
+      "name": "C#.NET",
+      "level": "Advanced",
+      "icon": "simple-icons:csharp"
+    },
+    {
+      "name": ".NET / VB6",
+      "level": "Advanced",
+      "icon": "simple-icons:visualbasic"
+    },
+    {
+      "name": "Python",
+      "level": "Intermediate",
+      "icon": "simple-icons:python"
+    },
+    {
+      "name": "Django",
+      "level": "Intermediate",
+      "icon": "simple-icons:django"
+    },
+    {
+      "name": "FastAPI",
+      "level": "Intermediate",
+      "icon": "simple-icons:fastapi"
+    },
+    {
+      "name": "Rust",
+      "level": "Intermediate",
+      "icon": "simple-icons:rust"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Filipino",
+      "fluency": "Native language"
+    },
+    {
+      "language": "English",
+      "fluency": "Intermediate"
+    }
+  ],
+  "projects": [
+    {
+      "name": "My Curriculum Vitae",
+      "isActive": true,
+      "description": "A landing page for a personal portfolio site, showcasing my skills, experiences, and projects.",
+      "highlights": [
+        "Built with Astro, a modern static site generator that delivers lightning-fast performance and optimized SEO.",
+        "Implemented smooth animations and interactive elements using GSAP (GreenSock Animation Platform) for an engaging user experience.",
+        "Designed a responsive layout with Tailwind CSS, ensuring the website looks great on all devices."
+      ],
+      "stack": {
+        "Astro": "simple-icons:astro",
+        "React": "simple-icons:react",
+        "TypeScript": "simple-icons:typescript",
+        "GSAP": "simple-icons:greensock",
+        "Tailwind": "mdi:tailwind"
+      },
+      "url": "",
+      "github": "https://github.com/seanvizm/astro-mycv"
+    }
+
+  ]
+}
