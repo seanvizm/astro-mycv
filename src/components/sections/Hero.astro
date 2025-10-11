@@ -2,6 +2,7 @@
 import { basics } from '@mycvdata'
 import Section from '@/components/Section.astro'
 import { Icon } from 'astro-icon/components'
+import { Image } from 'astro:assets';
 const { name, secondary_main_label, main_label, image, location, email, phone, last_updated } = basics
 const { region, country } = location
 ---
@@ -17,7 +18,7 @@ const { region, country } = location
         class="flex items-center text-center gap-4 print:gap-1"
       >
         <figure class='print:hidden'>
-          <img
+          <Image
             class='scale-110 sm:scale-100 transition-all sm:group-hover:scale-110 sm:group-hover:grayscale'
             height={600}
             width={600}
@@ -76,7 +77,7 @@ const { region, country } = location
               <a
                 data-ccursor
                 class="flex flex-col sm:basis-1/2 items-center justify-center rounded-md hover:cursor-none"
-                href={url}
+                href={url ? url : '/'}
                 target="_blank"
                 rel="noreferrer noopener"
                 aria-label={`${network} (opens in a new tab)`}
