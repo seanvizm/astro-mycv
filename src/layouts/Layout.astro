@@ -9,6 +9,7 @@ interface Props {
   title: string;
   description?: string;
   image?: string;
+  image_bg?: string;
   canonicalURL?: string;
   keywords?: string[];
 }
@@ -16,6 +17,7 @@ interface Props {
 const { 
   title,
   image = CV.basics.image,
+  image_bg = CV.basics.image_bg,
   canonicalURL = CV.basics.url,
   keywords = [
     "Full Stack Developer",
@@ -131,6 +133,7 @@ const breadcrumbSchema = {
     
     <!-- Preload critical assets -->
     <link rel="preload" as="image" href={image} />
+    <link rel="preload" as="image" href={image_bg} />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />

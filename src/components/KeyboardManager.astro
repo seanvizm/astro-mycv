@@ -136,6 +136,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
   
   document.querySelectorAll("#hotkeypad li").forEach(li => {
 	  li.setAttribute("data-ccursor", "lift");
+    li.removeAttribute("tabIndex");
 		li.classList.add("modified-cursor-none");
   });
   document.querySelectorAll("#hotkeypad footer > p").forEach(li => {

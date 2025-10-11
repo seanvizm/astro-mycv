@@ -3,7 +3,7 @@ import { basics } from '@mycvdata'
 import Section from '@/components/Section.astro'
 import { Icon } from 'astro-icon/components'
 import { Image } from 'astro:assets';
-const { name, secondary_main_label, main_label, image, location, email, phone, last_updated } = basics
+const { name, secondary_main_label, main_label, image, image_bg, location, email, phone, last_updated } = basics
 const { region, country } = location
 ---
 
@@ -18,17 +18,24 @@ const { region, country } = location
         class="flex items-center text-center gap-4 print:gap-1"
       >
         <figure class='print:hidden'>
-          <Image
-            class='scale-110 sm:scale-100 transition-all sm:group-hover:scale-110 sm:group-hover:grayscale'
-            height={600}
-            width={600}
+          {image_bg && (<Image
+            class='absolute scale-100 -mt-12 -ms-4 max-h-24'
+            height={101}
+            width={408}}
+            src={image_bg}
+            alt="Profile background"
+            loading='eager' />)}
+          {image && (<Image
+            class='profile -mt-4 scale-110 sm:scale-100 transition-all sm:group-hover:scale-110 sm:group-hover:grayscale border-gray-75 border-2'
+            height={100}
+            width={100}
             src={image}
             alt={`Profile of ${name}`}
-            loading='eager' />
+            loading='eager' />)}
         </figure>
-        <div class="flex flex-col items-center">
-          <h3 class="font-semibold font-roboto-condensed text-xl">{name}</h3>
-          <div class="overflow-hidden mt-1">
+        <div class="flex flex-col items-center mt-16 md:-ms-4 md:mt-16">
+          <h3 class="font-semibold font-roboto-condensed text-xl z-10">{name}</h3>
+          <div class="overflow-hidden -mt-1">
             <div class="font-roboto-condensed font-bold lowercase text-xl lg:text-[1rem] lg:leading-[1rem]">
               <div data-ccursor="lift"  class="text-nowrap md:text-sm text-skin-hue p-1 group/subtitle relative flex gap-1 transition-all">
                 <p class="font-roboto-condensed font-medium text-md lg:text-[1rem] lg:leading-[1rem]">
@@ -45,7 +52,7 @@ const { region, country } = location
           </div>
         </div>
       </div>
-      <div data-ccursor="noPadding" class='flex w-max gap-2 py-0 px-2 text-sm text-skin-muted'>
+      <div data-ccursor="noPadding" class='flex w-max gap-2 py-0 px-2 mt-2 text-sm text-skin-muted'>
         <Icon class='print:hidden sm:group-hover:text-skin-hue' name='mdi:address-marker-outline' width={20} height={20} />
         {region}, {country}
       </div>
@@ -112,7 +119,7 @@ const { region, country } = location
     @apply text-balance text-base text-skin-muted print:text-lg;
   }
 
-  img {
+  img.profile {
     @apply aspect-square w-32 rounded-full bg-cover;
   }
 
