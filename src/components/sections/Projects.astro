@@ -9,7 +9,7 @@ import { projects } from "@mycvdata";
   <div class="grid grid-cols-1 gap-3 md:grid-cols-2 print:flex print:flex-col">
     {
       projects && projects.map(
-        ({ url, description, highlights, name, isActive, github, stack }) => {
+        ({ url, description, highlights, langIcon, name, isActive, github, stack }) => {
           return (
             <div
               role="contentinfo"
@@ -19,7 +19,7 @@ import { projects } from "@mycvdata";
                 class='relative z-10 flex items-center justify-between space-x-[10px]'
               >
                 <div class="flex items-center gap-2">
-                  <Icon data-ccursor="lift" name="mdi:folder-outline" class="size-4" />
+                  <Icon data-ccursor="lift" name={langIcon ? langIcon : 'mdi:code'} class="size-4" />
                   <div class="flex items-center gap-[6px]">
                     {isActive ? (
                       <a
@@ -59,7 +59,7 @@ import { projects } from "@mycvdata";
               </p>
               <ul class='z-10 mt-1 text-sm'>
                 {highlights.map((highlight) => {
-                  return <li data-ccursor class="w-max">{highlight}</li>;
+                  return <li data-ccursor class="text-wrap">{highlight}</li>;
                 })}
               </ul>
               

@@ -8,17 +8,17 @@
     "secondary_other_label": "AI/ML",
     "image": "/me_coding.png",
     "email": "vizmara@gmail.com",
-    "contact": "0917-123-4567",
-    "url": "https://www.linkedin.com/in/seanvizm/",
-    "summary": "Pushing business concept to code, problem to solution and keeping things simple. ✨",
     "theme": "mystical",
-    "last_updated": "October 11, 2025",
+    "url": "https://www.linkedin.com/in/seanvizm/",
+    "summary": "Pushing business concept to code, problem to solution and keeping things simple. 🌀",
     "location": {
       "city": "",
       "region": "Calabarzon",
       "countryCode": "PH",
       "country": "Philippines"
     },
+    "phone": "",
+    "last_updated": "October 11, 2025",
     "profiles": [
       {
         "network": "GitHub",
@@ -46,7 +46,7 @@
   "work": [
     {
       "name": "Cubewise AI",
-      "position": "Consultant / Fullstack Software Developer",
+      "position": "Consultant / DevOps Engineer - Fullstack Software Developer",
       "location_type": "Remote - Europe Timezone",
       "location": "Luxembourg, Luxembourg",
       "url": "https://cubewise.ai/",
@@ -54,9 +54,18 @@
       "endDate": null,
       "summary": "",
       "responsibilities": [
-        "Low-code Data Management System -- This is significantly a self-made generic tool that can be use practically in any type of business operation that could empower users to manage data exploration and virtualization effectively. Fill with custom fields and data relationships, dynamic page contents & menu navigation, and custom modules / virtual tables that can all be dynamically managed with its admin application, with built-in user roles & rights and packed with API automation & documentation which can really demonstrates the ability to build flexible and scalable solutions that reduce development time and effort.",
-        "Central Site Management -- This is a site administration tool to automate the full installation and other setup process for multi-tenant in a multi-client application in a \"software as a service\" runtime stack. This tool streamlined the configuration and database setup for new clients, significantly reducing manual effort and deployment time.",
-        "Data Table Generic Component -- This component allows for rapid creation of tables with various built-in functionalities, including automation for API data sources, form input, column filtering & sorting, pagination, charts & graphs view, bulk data importing, and CRUD operations, streamlining the development process and promoting code reusability."
+        {
+          "title": "Low-code Data Management System",
+          "details": "This is significantly a self-made generic tool that can be use practically in any type of business operation that could empower users to manage data exploration and virtualization effectively. Fill with custom fields and data relationships, dynamic page contents & menu navigation, and custom modules / virtual tables that can all be dynamically managed with its admin application, with built-in user roles & rights and packed with API automation & documentation which can really demonstrates the ability to build flexible and scalable solutions that reduce development time and effort."
+        },
+        {
+          "title": "Central Site Management",
+          "details": "This is a site administration tool to automate the full installation and other setup process for multi-tenant in a multi-client application in a \"software as a service\" runtime stack. This tool streamlined the configuration and database setup for new clients, significantly reducing manual effort and deployment time."
+        },
+        {
+          "title": "Data Table Generic Component",
+          "details": "This component allows for rapid creation of tables with various built-in functionalities, including automation for API data sources, form input, column filtering & sorting, pagination, charts & graphs view, bulk data importing, and CRUD operations, streamlining the development process and promoting code reusability."
+        }
       ],
       "skills": {
         "PHP": "simple-icons:php",
@@ -77,9 +86,58 @@
         "Linux": "simple-icons:linux",
         "Git": "mdi:git",
         "GitHub": "mdi:github",
-        "API REST": "mdi:api",
+        "REST API": "mdi:api",
         "Postman": "simple-icons:postman",
         "Swagger": "simple-icons:swagger"
+      }
+    },
+    {
+      "name": "Stok Manila Inc.",
+      "position": "Team Lead / Senior Backend WordPress Developer",
+      "location_type": "Remote - Europe Timezone",
+      "location": "Stockholm, Sweden",
+      "url": "https://www.stok.se/",
+      "startDate": "2021-02-08",
+      "endDate": "2024-02-10",
+      "summary": "",
+      "responsibilities": [
+        {
+          "title": "WordPress/Symfony Ecommerce Sites Development",
+          "details": "this includes new features request, design revision, custom post types, fields, themes & plugins development and support services from existing client’s websites."
+        },
+        {
+          "title": "API Integrations",
+          "details": "work also with integration of these third party api services, https://centra.com, https://voyado.com, https://www.ingrid.com, https://www.global-e.com, https://www.klarna.com."
+        }
+      ],
+      "skills": {
+        "PHP": "simple-icons:php",
+        "WordPress": "simple-icons:wordpress",
+        "ACF": "simple-icons:wordpress",
+        "Symfony": "simple-icons:symfony",
+        "JavaScript": "simple-icons:javascript",
+        "Jquery": "simple-icons:jquery",
+        "VueJS": "mdi:vuejs",
+        "MySQL": "simple-icons:mysql",
+        "GraphQL": "simple-icons:graphql",
+        "eCommerce": "simple-icons:woocommerce",
+        "SEO": "simple-icons:googleads",
+        "Google Analytics": "simple-icons:googleanalytics",
+        "Google Tag Manager": "simple-icons:googletagmanager",
+        "Figma": "simple-icons:figma",
+        "HTML5": "simple-icons:html5",
+        "Bootstrap": "simple-icons:bootstrap",
+        "Tailwind": "mdi:tailwind",
+        "CSS3": "ri:css3-fill",
+        "Docker-Compose": "mdi:docker",
+        "Linux": "simple-icons:linux",
+        "SVN": "simple-icons:subversion",
+        "Git": "mdi:git",
+        "GitHub": "mdi:github",
+        "REST API": "mdi:api",
+        "Jira": "simple-icons:jira",
+        "Trello": "simple-icons:trello",
+        "Postman": "simple-icons:postman"
       }
     }
   ],
@@ -102,9 +160,29 @@
       "icon": "simple-icons:livewire"
     },
     {
+      "name": "WordPress",
+      "level": "Advanced",
+      "icon": "simple-icons:wordpress"
+    },
+    {
+      "name": "REST API",
+      "level": "Advanced",
+      "icon": "mdi:api"
+    },
+    {
       "name": "MySQL",
       "level": "Advanced",
       "icon": "simple-icons:mysql"
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "Advanced",
+      "icon": "simple-icons:postgresql"
+    },
+    {
+      "name": "GraphQL",
+      "level": "Advanced",
+      "icon": "simple-icons:graphql"
     },
     {
       "name": "JavaScript",
@@ -112,19 +190,19 @@
       "icon": "simple-icons:javascript"
     },
     {
-      "name": "Docker",
+      "name": "AlpineJS",
+      "level": "Advanced",
+      "icon": "simple-icons:javascript"
+    },
+    {
+      "name": "VueJS",
       "level": "Intermediate",
-      "icon": "mdi:docker"
+      "icon": "mdi:vuejs"
     },
     {
-      "name": "Git",
-      "level": "Advanced",
-      "icon": "mdi:git"
-    },
-    {
-      "name": "API REST",
-      "level": "Advanced",
-      "icon": "mdi:api"
+      "name": "ReactJS",
+      "level": "Intermediate",
+      "icon": "simple-icons:react"
     },
     {
       "name": "C#.NET",
@@ -155,6 +233,26 @@
       "name": "Rust",
       "level": "Intermediate",
       "icon": "simple-icons:rust"
+    },
+    {
+      "name": "Tailwind",
+      "level": "Intermediate",
+      "icon": "simple-icons:tailwindcss"
+    },
+    {
+      "name": "Bootstrap",
+      "level": "Intermediate",
+      "icon": "simple-icons:bootstrap"
+    },
+    {
+      "name": "Docker",
+      "level": "Advanced",
+      "icon": "mdi:docker"
+    },
+    {
+      "name": "Github",
+      "level": "Advanced",
+      "icon": "mdi:github"
     }
   ],
   "languages": [
@@ -169,6 +267,31 @@
   ],
   "projects": [
     {
+      "langIcon": "simple-icons:rust",
+      "name": "Rust Cassandra Graph API",
+      "isActive": true,
+      "description": "A high-performance graph database API built with Rust, Axum, and Apache Cassandra. This project provides a RESTful API for managing graph data with nodes and edges, complete with interactive Swagger documentation.",
+      "highlights": [
+        "Fast and Safe: Built with Rust and Axum for maximum performance and memory safety.",
+        "Scalable: Uses Apache Cassandra for horizontal scalability.",
+        "Graph Data Model: Support for nodes with properties and typed relationships (edges).",
+        "RESTful API: Clean HTTP endpoints for all graph operations.",
+        "Docker Support: Easy development setup with Docker Compose.",
+        "Health Monitoring: Built-in health check endpoints.",
+        "Error Handling: Comprehensive error handling with proper HTTP status codes."
+      ],
+      "stack": {
+        "Rust": "simple-icons:rust",
+        "Axum": "simple-icons:rust",
+        "Cassandra": "simple-icons:apachecassandra",
+        "Swagger": "simple-icons:swagger",
+        "Docker-Compose": "mdi:docker"
+      },
+      "url": "",
+      "github": "https://github.com/seanvizm/rust-graph"
+    },
+    {
+      "langIcon": "simple-icons:astro",
       "name": "My Curriculum Vitae",
       "isActive": true,
       "description": "A landing page for a personal portfolio site, showcasing my skills, experiences, and projects.",

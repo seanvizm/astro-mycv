@@ -63,14 +63,14 @@ const millisecondsInYear = 1000 * 60 * 60 * 24 * 365
                   </div>
                 )}
 
-                {(responsibilities ) &&  (
+                {(responsibilities) &&  (
                 <div class="after:from-skin-hue dark:after:to-skin-hue/0 flex relative flex-col print:!h-auto gap-4 print:gap-2 after:bg-gradient-to-t after:absolute after:bottom-0 after:w-full print:after:hidden after:h-12 after:content-[''] h-20 group-data-[expanded=true]:after:hidden group-data-[expanded=true]:h-auto overflow-hidden duration-200 ease-out">
                 {responsibilities && (
                   <div class="flex flex-col gap-1">
                     <h4 class="print:font-bold print:pt-1" data-ccursor="lift">Projects:</h4>
                     <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
                       {responsibilities.map(responsibility => (
-                        <li data-ccursor>{responsibility}</li>
+                        <li data-ccursor><strong>{responsibility.title}</strong> -- {responsibility.details}</li>
                       ))}
                     </ul>
                   </div>

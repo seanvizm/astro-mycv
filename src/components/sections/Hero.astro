@@ -2,7 +2,7 @@
 import { basics } from '@mycvdata'
 import Section from '@/components/Section.astro'
 import { Icon } from 'astro-icon/components'
-const { name, secondary_main_label, main_label, image, location, email, last_updated } = basics
+const { name, secondary_main_label, main_label, image, location, email, phone, last_updated } = basics
 const { region, country } = location
 ---
 
@@ -45,7 +45,7 @@ const { region, country } = location
         </div>
       </div>
       <div data-ccursor="noPadding" class='flex w-max gap-2 py-0 px-2 text-sm text-skin-muted'>
-        <Icon class='print:hidden sm:group-hover:text-skin-hue' name='mdi:world' width={20} height={20} />
+        <Icon class='print:hidden sm:group-hover:text-skin-hue' name='mdi:address-marker-outline' width={20} height={20} />
         {region}, {country}
       </div>
       <div data-ccursor="noPadding" class='flex w-max gap-2 py-0 px-2 text-sm text-skin-muted'>
@@ -63,6 +63,12 @@ const { region, country } = location
           {email}
         </a>
       </div>
+      {phone && (
+        <div class="flex w-max gap-2 py-0 px-2 text-sm text-skin-muted">
+          <Icon class='print:hidden sm:group-hover:text-skin-hue' name='mdi:phone-outline' width={20} height={20} />
+          {phone}
+        </div>
+      )}
       <div class='print:hidden flex group/social w-max gap-2 py-1 px-1 text-sm text-skin-muted'>
         {
           basics.profiles.map(({network, url, icon, color}) => {
@@ -84,7 +90,6 @@ const { region, country } = location
         }
       </div>
       <div data-ccursor="noPadding" class='flex w-max gap-2 py-0 px-2 text-sm text-skin-muted'><small>Last updated: <b>{last_updated}</b></small></div>
-      <div class="hidden print:block"><b>Contact: </b>{email}</div>
     </section>
   </div>
 </Section>
