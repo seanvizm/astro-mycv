@@ -16,11 +16,13 @@ interface Basics {
   name: string;
   label: string;
   image: string;
+  image_bg: string;
   email: string;
   phone?: string;
   url: URL;
   summary: string;
   location: Location;
+  last_updated: DateStr;
   profiles: Array<Profiles>;
 }
 
@@ -30,6 +32,7 @@ interface Location {
   postalCode?: string;
   countryCode: string;
   region: string;
+  country: string;
 }
 
 interface Profiles {

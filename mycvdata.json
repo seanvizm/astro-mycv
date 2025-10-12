@@ -4,8 +4,8 @@
     "name": "Sean Marasigan",
     "label": "Software Developer",
     "main_label": "Engineer",
-    "secondary_main_label": "Software",
-    "secondary_other_label": "AI/ML",
+    "secondary_label": "Software",
+    "other_label": "AI/ML",
     "image": "/me_coding.png",
     "image_bg": "/Concept2Code.png",
     "email": "vizmara@gmail.com",
@@ -19,7 +19,7 @@
       "country": "Philippines"
     },
     "phone": "",
-    "last_updated": "October 11, 2025",
+    "last_updated": "October 12, 2025",
     "profiles": [
       {
         "network": "GitHub",
@@ -99,7 +99,7 @@
       "location": "Stockholm, Sweden",
       "url": "https://www.stok.se/",
       "startDate": "2021-02-08",
-      "endDate": "2024-02-10",
+      "endDate": "2024-02-08",
       "summary": "",
       "responsibilities": [
         {
@@ -139,6 +139,192 @@
         "Jira": "simple-icons:jira",
         "Trello": "simple-icons:trello",
         "Postman": "simple-icons:postman"
+      }
+    },
+    {
+      "name": "Actino Inc.",
+      "position": "Team Lead / Fullstack Software Developer",
+      "location_type": "Remote - Europe Timezone",
+      "location": "Luxembourg, Luxembourg",
+      "url": "https://change4win.com/",
+      "startDate": "2014-05",
+      "endDate": "2021-02",
+      "summary": "",
+      "responsibilities": [
+        {
+          "title": "Business Transformation System",
+          "details": "this is defined as a change management platform with solution packages like Compliance Transformation Efficiency, Collaborative Risk Management, Task and Project Management, also features different modules for collaboration, SWOT analysis and a problem-solving process with incident reporting and data monitoring."
+        },
+        {
+          "title": "Central Site Management and Supporting System",
+          "details": "the main task of this application is to auto setup a client's site upon subscription. It auto creates a new registered subdomain URL and a new database for the client. It also handles the data management and configuration of dynamic source code setup based on application version."
+        },
+        {
+          "title": "Billing & Collection Management System (by subscription process)",
+          "details": "this is a customer management system which autogenerate monthly billings for clients and send through their emails, handle payments through stripe payment gateway and to monitor balance, payment and billing histories of every subscriber."
+        },
+        {
+          "title": "",
+          "details": "Mainly responsible for creation of REST APIs, managing database on creation of tables, views, triggers, user-defined functions and stored procedures."
+        },
+        {
+          "title": "",
+          "details": "Task to manage web hosting servers with CentOS 7, Apache 2.2, Nginx, PHP 5.6/7.x, SSL, MySQL 5.6, and later migrated to use Docker application containers to ensure portability and consistency across multiple environments from development to production."
+        },
+        {
+          "title": "",
+          "details": "I also created an advance generic html table jQuery plugin with built-in features such as inline adding and editing, column sorting and filters, data pagination, data formatter templating, export to word/excel/pdf and bulk import data management tool, Kanban views options for task management table feature, and custom interactive Gantt table view for project tracking and monitoring."
+        }
+      ],
+      "skills": {
+        "PHP": "simple-icons:php",
+        "Zend": "simple-icons:zendframework",
+        "Laravel": "simple-icons:laravel",
+        "JavaScript": "simple-icons:javascript",
+        "AngularJS": "simple-icons:angular",
+        "jQuery": "simple-icons:jquery",
+        "NodeJs": "mdi:nodejs",
+        "ExpressJs": "simple-icons:express",
+        "MySQL": "simple-icons:mysql",
+        "Docker": "mdi:docker",
+        "HTML5": "simple-icons:html5",
+        "CSS3": "ri:css3-fill",
+        "Apache": "simple-icons:apache",
+        "Nginx": "simple-icons:nginx",
+        "Linux": "simple-icons:linux"
+      }
+    },
+    {
+      "name": "Techcel Outsourcing Solutions",
+      "position": "System Analyst / Fullstack Software Developer",
+      "location_type": "Onsite - US Timezone",
+      "location": "27th flr, Raffles Corporate Center, F. Ortigas Jr. Rd., Ortigas Center, Pasig City 1605, Metro Manila, Philippines",
+      "url": "https://techcel.com/",
+      "startDate": "2012-08",
+      "endDate": "2014-05",
+      "summary": "",
+      "responsibilities": [
+        {
+          "title": "Financial Management System ",
+          "details": "this application provides significant features like invoice tracking and expense management, bank reconciliation, sales monitoring, depreciating income and expenses according to month-end closing and fiscal year-end reporting.  Generates ledger reports like trial balance, income statement, profit & loss and balance sheet."
+        },
+        {
+          "title": "Human Resource Integrated System (includes leave, timesheet & payroll management)",
+          "details": "this web application is a complete payroll processing and attendance recording system using biometrics, also includes employee’s info and service record, schedule filing, and leave application handling. It generates reports such as payroll worksheet, paycard file for fund transfer, and other employee/government report requirements."
+        },
+        {
+          "title": "Customize Webform and Tracker for VICIDial Call Center Suite",
+          "details": "this is an html form used to send customer data or email notifications that is customized for each client's needs. In this webform customer data is auto populated during calls, while customer call disposition is entered by the agents and submitted directly to the client web url address (API) after each call. This also includes a data tracker for report compilation."
+        },
+        {
+          "title": "Wiki Site for CSR/Clients",
+          "details": "an online site of instruction and training manuals primarily for customer service representatives where our BPO clients allow to add, edit or delete content in a collaborative environment."
+        }
+      ],
+      "skills": {
+        "PHP": "simple-icons:php",
+        "Zend": "simple-icons:zendframework",
+        "Laravel": "simple-icons:laravel",
+        "JavaScript": "simple-icons:javascript",
+        "jQuery": "simple-icons:jquery",
+        "MySQL": "simple-icons:mysql",
+        "Bootstrap": "mdi:bootstrap",
+        "HTML5": "simple-icons:html5",
+        "CSS3": "ri:css3-fill",
+        "MediaWiki": "simple-icons:wikipedia",
+        "Apache": "simple-icons:apache",
+        "Nginx": "simple-icons:nginx",
+        "Linux": "simple-icons:linux"
+      }
+    },
+    {
+      "name": "Primewater Infrastructure Corporation, ePrime Business Solutions, Inc.",
+      "position": "Fullstack Software Developer / Database Administrator",
+      "location_type": "Onsite - PH Timezone",
+      "location": "3rd flr. Starmall Annex, Alabang-Zapote Road, Las Pinas City, Metro Manila, Philippines",
+      "url": "https://primewatercorp.com/",
+      "startDate": "2007-11",
+      "endDate": "2012-08",
+      "summary": "",
+      "responsibilities": [
+        {
+          "title": "Billing and Collections Management System (for water/HOA dues/cable utility services)",
+          "details": "this is a customer management system with a complete billing cycle from water meter consumptions to bill computation, statement of accounts, and payment collection system. Also integrates with an account monitoring system for customer’s ledger and history of their bills, payments, meter readings, and outstanding balance.  This application also processes timely reports like payment collection, for disconnection report and collection efficiency."
+        },
+        {
+          "title": "Web Service Application for Water Meter Reading",
+          "details": "as part of the project for centralized billing management, this application’s major function is to get or set data from the central database server to the remote offices and vice versa. Mainly for customer data downloading to uploading of water meter readings from their reading gadgets."
+        },
+        {
+          "title": "Web Based Data Reporting System",
+          "details": "a web application for data reports exporting system and use particularly by client’s remote offices for their data retrieval, sample reports include “Daily Payment Collection” in calendar format, “Customer Ledger & History” and “Collection Efficiency Reports”. Reports are exported in different formats: MS Word, Excel, & PDF File."
+        },
+        {
+          "title": "SMS Text Blasting System",
+          "details": "a text messaging service used for notification of current bill and due date, water interruption advisory, and other announcements.  Also include an automated response system responding to keywords from customer’s SMS texting inquiry like “PIC<space>BILL<space><customer number>”, responded automatically with their basic charge, balance and last payment. Templates and keywords are bind to SQL Server and automatically feed data from their respective databases."
+        },
+        {
+          "title": "Purchase Order & Inventory System",
+          "details": "an item management system which includes material request, purchasing, receiving, issuance, return, price history and a near zero level monitoring, also include pump and motor monitoring system for all the deepwells around their subdivisions."
+        },
+        {
+          "title": "Materials Requisition and Approval System",
+          "details": "a web application that is part of the “Purchase Order & Inventory System” used by company’s remote offices and affiliates for material requisition and viewing of request status and issuance schedule."
+        },
+        {
+          "title": "",
+          "details": "Put up a network of dedicated database servers for their system using MS SQL Server, a web server for ftp, web application & services using IIS Manager, including two terminal servers for their client’s remote access and provide regular database maintenance and management to their system.  This network also includes a firebox watchguard firewall for added security."
+        }
+      ],
+      "skills": {
+        "PHP": "simple-icons:php",
+        "C#.NET": "simple-icons:csharp",
+        "ASP.NET": "mdi:microsoft",
+        "VB6": "simple-icons:visualbasic",
+        "JavaScript": "simple-icons:javascript",
+        "jQuery": "simple-icons:jquery",
+        "MSSQL Server": "simple-icons:microsoftsqlserver",
+        "HTML5": "simple-icons:html5",
+        "CSS3": "ri:css3-fill",
+        "IIS": "mdi:web"
+      }
+    },
+    {
+      "name": "Metro Tagaytay College of Business & Arts, Centennial College of the Philippines",
+      "position": "Software Developer / Part-Time IT Instructor",
+      "location_type": "Onsite - PH Timezone",
+      "location": "Akle St. corner Kaybagal South, Tagaytay City, Philippines",
+      "url": "",
+      "startDate": "2003-04",
+      "endDate": "2007-10",
+      "summary": "",
+      "responsibilities": [
+        {
+          "title": "Student Information System",
+          "details": "this project is a data warehousing for student’s academic records.  Also covers printing support for transcripts of records requested from the Office of the Registrar."
+        },
+        {
+          "title": "Payroll System",
+          "details": "this project is typically for their payroll processing and payslip printing with auto-computation of personal loans, withholding tax, Philhealth, Pagibig & SSS and also integrates employee’s service records."
+        },
+        {
+          "title": "Library System",
+          "details": "this project is a book inventory and activity tracking from its track and shelve position to someone who borrowed. Books were monitored by an automated tracking system and provided a list of borrowers with books on due."
+        },
+        {
+          "title": "",
+          "details": "Handled computer subjects particularly Programming (Visual Basic 6.0, HTML, Turbo C), Computer Installation & Troubleshooting, Networking, Security Issues and Preventive Maintenance."
+        },
+        {
+          "title": "",
+          "details": "Responsible for supervision, administration and maintenance of their computers and network system."
+        }
+      ],
+      "skills": {
+        "VB6": "simple-icons:visualbasic",
+        "MS Access": "simple-icons:microsoftaccess",
+        "HTML5": "simple-icons:html5",
+        "Turbo C": "simple-icons:turbo"
       }
     }
   ],

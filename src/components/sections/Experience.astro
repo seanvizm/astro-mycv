@@ -31,7 +31,7 @@ const millisecondsInYear = 1000 * 60 * 60 * 24 * 365
                   {url ? (
                     <a data-ccursor class="text-skin-hue inline-block w-max" href={url} title={`Ver ${name}`} target="_blank">{name}</a>
                   ) : (
-                    <span>{name}</span>
+                    <span class="text-skin-hue inline-block w-max">{name}</span>
                   )}
                   {url &&
                     <span class="inline-block text-skin-hue print:[&>svg]:hidden">
@@ -70,7 +70,7 @@ const millisecondsInYear = 1000 * 60 * 60 * 24 * 365
                     <h4 class="print:font-bold print:pt-1" data-ccursor="lift">Projects:</h4>
                     <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
                       {responsibilities.map(responsibility => (
-                        <li data-ccursor><strong>{responsibility.title}</strong> -- {responsibility.details}</li>
+                        <li data-ccursor><strong>{responsibility.title}</strong> {(responsibility.title && responsibility.details) && ('--')} {responsibility.details}</li>
                       ))}
                     </ul>
                   </div>

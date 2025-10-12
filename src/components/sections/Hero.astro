@@ -3,7 +3,7 @@ import { basics } from '@mycvdata'
 import Section from '@/components/Section.astro'
 import { Icon } from 'astro-icon/components'
 import { Image } from 'astro:assets';
-const { name, secondary_main_label, main_label, image, image_bg, location, email, phone, last_updated } = basics
+const { name, secondary_label, main_label, image, image_bg, location, email, phone, last_updated } = basics
 const { region, country } = location
 ---
 
@@ -24,14 +24,14 @@ const { region, country } = location
             width={408}}
             src={image_bg}
             alt="Profile background"
-            loading='lazy' />)}
+            loading='eager' />)}
           {image && (<Image
             class='profile -mt-4 scale-110 sm:scale-100 transition-all sm:group-hover:scale-110 sm:group-hover:grayscale border-gray-75 border-2'
             height={100}
             width={100}
             src={image}
             alt={`Profile of ${name}`}
-            loading='lazy' />)}
+            loading='eager' />)}
         </figure>
         <div class="flex flex-col items-center mt-16 md:-ms-4 md:mt-16">
           <h3 class="font-semibold font-roboto-condensed text-xl z-10">{name}</h3>
@@ -39,11 +39,11 @@ const { region, country } = location
             <div class="font-roboto-condensed font-bold lowercase text-xl lg:text-[1rem] lg:leading-[1rem]">
               <div data-ccursor="lift"  class="text-nowrap md:text-sm text-skin-hue p-1 group/subtitle relative flex gap-1 transition-all">
                 <p class="font-roboto-condensed font-medium text-md lg:text-[1rem] lg:leading-[1rem]">
-                  {secondary_main_label}
+                  {secondary_label}
                 </p>
                 <!-- <div class="absolute inset-x-0 top-0 w-max translate-y-16 transition-all duration-450 ease-in-out group-hover/subtitle:translate-y-0">
                   <p class="font-roboto-condensed font-bold lowercase text-xl lg:text-[1rem] lg:leading-[1rem] bg-clip-text ">
-                    {secondary_other_label}
+                    {other_label}
                   </p>
                 </div> -->
                 <p class="text-sm lg:text-lg">{main_label} ✨</p>
