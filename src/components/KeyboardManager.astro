@@ -134,6 +134,9 @@ const profilesInfo = profiles.map(({ network, url }) => {
     })
   })
   
+  document.querySelectorAll("#hotkeypad h4").forEach(h4 => {
+    h4.setAttribute("aria-label", h4.textContent.toLowerCase());
+  });
   document.querySelectorAll("#hotkeypad li").forEach(li => {
 	  li.setAttribute("data-ccursor", "lift");
     li.removeAttribute("tabIndex");

@@ -24,14 +24,14 @@ const { region, country } = location
             width={408}}
             src={image_bg}
             alt="Profile background"
-            loading='eager' />)}
+            loading='lazy' />)}
           {image && (<Image
             class='profile -mt-4 scale-110 sm:scale-100 transition-all sm:group-hover:scale-110 sm:group-hover:grayscale border-gray-75 border-2'
             height={100}
             width={100}
             src={image}
             alt={`Profile of ${name}`}
-            loading='eager' />)}
+            loading='lazy' />)}
         </figure>
         <div class="flex flex-col items-center mt-16 md:-ms-4 md:mt-16">
           <h3 class="font-semibold font-roboto-condensed text-xl z-10">{name}</h3>
@@ -97,7 +97,7 @@ const { region, country } = location
           })
         }
       </div>
-      <div data-ccursor="noPadding" class='flex w-max gap-2 py-0 px-2 text-sm text-skin-muted'><small>Last updated: <b>{last_updated}</b></small></div>
+      <div data-ccursor="lift" class='flex w-max gap-2 py-0 px-2 text-sm text-skin-muted'><small>Last updated: <b>{last_updated}</b></small></div>
     </section>
   </div>
 </Section>
