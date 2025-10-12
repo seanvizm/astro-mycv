@@ -28,17 +28,17 @@ const millisecondsInYear = 1000 * 60 * 60 * 24 * 365
               <h3>
                 <span class="inline-flex items-center text-lg print:text-base leading-tight group/link focus-visible:text-amber-500" aria-label="{position} - {company}">
                   <span>{position} <br/>
-                  {url ? (
-                    <a data-ccursor class="text-skin-hue inline-block w-max" href={url} title={`Ver ${name}`} target="_blank">{name}</a>
-                  ) : (
-                    <span class="text-skin-hue inline-block w-max">{name}</span>
-                  )}
-                  {url &&
-                    <span class="inline-block text-skin-hue print:[&>svg]:hidden">
-                      <Icon name="ri:arrow-up-line" class="inline-block w-4 h-4 ml-1 transition-transform translate-y-px shrink-0 group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none rotate-45" aria-hidden="true">
-                      </Icon>
-                    </span>
-                  }
+                    {url ? (
+                      <a data-ccursor class="text-skin-hue inline-block" href={url} title={`Ver ${name}`} target="_blank">
+                        {name}
+                        <span class="inline-block text-skin-hue print:[&>svg]:hidden">
+                        <Icon name="ri:arrow-up-line" class="inline-block w-4 h-4 ml-1 transition-transform translate-y-px shrink-0 group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none rotate-45" aria-hidden="true">
+                        </Icon>
+                      </span>
+                      </a>
+                    ) : (
+                      <span class="text-skin-hue inline-block">{name}</span>
+                    )}
                   </span>
                 </span>
               </h3>

@@ -6,13 +6,14 @@ import Experience from "@/components/sections/Experience.astro";
 import Hero from "@/components/sections/Hero.astro";
 import Projects from "@/components/sections/Projects.astro";
 import Skills from "@/components/sections/Skills.astro";
+import Certificates from "@/components/sections/Certificates.astro";
 import KeyboardManager from "@/components/KeyboardManager.astro";
 import ThemeSwitch from "@/components/ThemeSwitch.astro";
 ---
 
 <Layout title="Curriculum Vitae">
   <main
-    class="relative grid h-full max-w-7xl gap-12 p-8 max-sm:py-16 md:min-h-screen md:grid-cols-6 md:p-16 xl:gap-24 text-skin-base print:gap-4"
+    class="relative md:grid h-full max-w-7xl gap-12 p-8 max-sm:py-16 md:min-h-screen md:grid-cols-6 md:p-16 xl:gap-24 text-skin-base print:gap-4"
   >
     <div
       class="slide-enter space-y-6 ease-in md:col-span-2 print:grid print:grid-cols-5 print:space-y-0 md:sticky top-0 self-start h-min"
@@ -30,6 +31,7 @@ import ThemeSwitch from "@/components/ThemeSwitch.astro";
           <>
             <Projects className="print:hidden" />
             <Skills className="print:col-span-full" />
+            <Certificates className="print:col-span-full" />
           </>
         )
       }

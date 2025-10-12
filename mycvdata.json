@@ -329,7 +329,150 @@
     }
   ],
   "education": [],
-  "certificates": [],
+  "certificates": [
+    {
+      "category": "Professional Certificates",
+      "list" : [
+        {
+          "icon": "mdi:github",
+          "title": "Career Essentials in Github Professional Certificate",
+          "url": "https://www.linkedin.com/learning/certificates/8d346614aa55164a1b9774e5c818dea24d58ce15610ba809579177e295d0ba11",
+          "imageSrc": "https://media.licdn.com/dms/image/v2/D4E22AQE3sClr6Sf3sA/feedshare-shrink_800/B4EZh2Qs.VGUAk-/0/1754330747186?e=1762992000&v=beta&t=My7XPSAgcD_JE8J841jYhDc4GaDBylWAs5qrLkqyqYE"
+        },
+        {
+          "icon": "mdi:docker",
+          "title": "Docker Foundations Professional Certificate",
+          "url": "https://www.linkedin.com/learning/certificates/10c5fe79d57fa14ae0d26c940a02bd36f1427cd56643480bc6c32a8554fca522",
+          "imageSrc": "https://media.licdn.com/dms/image/v2/D4E22AQE6gMgiYEulVg/feedshare-shrink_800/B4EZguBhfAGcAg-/0/1753118808294?e=1762992000&v=beta&t=LhbV302-IY6rc_eYpMQ-rYEgiMB2cTf44eD-dtCfG28"
+        }
+      ]
+    },
+    {
+      "category": "Personal Development Courses",
+      "list" : [
+        {
+          "icon": "simple-icons:selenium",
+          "title": "Selenium Essential Training",
+          "url": "https://www.linkedin.com/learning/certificates/b376fbf52a71717a31348d0b6ce6e20884c609f9521c3ce27fc99283a66c5c76"
+        },
+        {
+          "icon": "mdi:linkedin",
+          "title": "10-in-10 AI Challenge",
+          "url": "https://www.linkedin.com/learning/certificates/5bb0c96bcf6b7dbb87ec0b339a7c26f7016dd61b5a7849983450eda21b5e4c24"
+        },
+        {
+          "icon": "mdi:azure",
+          "title": "Azure Open AI in .NET",
+          "url": "https://www.linkedin.com/learning/certificates/0550bdde805b0b926b11e1a46100d13d2a552f0afd644736a8a8df2d14938d75"
+        },
+        {
+          "icon": "simple-icons:langchain",
+          "title": "Building a Personalized Chatbot with OpenAI and LangChain",
+          "url": "https://www.linkedin.com/learning/certificates/71765906424f07735763c14fca2dbf6b2b7fa6e52b0ca7cd733917fd905abde1"
+        },
+        {
+          "icon": "simple-icons:rust",
+          "title": "Full-stack Web Applications with Rust and Leptos",
+          "url": "https://www.linkedin.com/learning/certificates/0f01247effa9c70ec123324cfbfa5f1b9ed8b893d27092a2eefd145b4f965ffb"
+        },
+        {
+          "icon": "simple-icons:apacheairflow",
+          "title": "Learning Apache Airflow",
+          "url": "https://www.linkedin.com/learning/certificates/b041ecd3fc11f55e4ea184a5780cb8bc2fb4bf561de550b8920503433615e11e"
+        },
+        {
+          "icon": "mdi:azure",
+          "title": "Microsoft Azure AI Essentials: Workloads and Machine Learning on Azure",
+          "url": "https://www.linkedin.com/learning/certificates/f0a8f6cb62bc1b3b5edb1a9ae94c4b33b485994f88355d16b03943b7603a45e9"
+        },
+        {
+          "icon": "mdi:linkedin",
+          "title": "Test Automation Foundation",
+          "url": "https://www.linkedin.com/learning/certificates/da2ebdc9da9fb689eac4c2985e29f845319b31d53d992bd49c75ca3a5f1b5971"
+        },
+        {
+          "icon": "mdi:linkedin",
+          "title": "Using AI as Your SEO Assistant",
+          "url": "https://www.linkedin.com/learning/certificates/4c3feaff3ea6462b12b256cc0fecaad3370c2b36dc764b0a38494ccfbe6d07e6"
+        },
+        {
+          "icon": "simple-icons:python",
+          "title": "Using Python for Automation",
+          "url": "https://www.linkedin.com/learning/certificates/e66055df8cc299f5e60c974bb2fd144ea91f1f70e507a959b2b33cd54264c086"
+        },
+        {
+          "icon": "simple-icons:n8n",
+          "title": "Build AI Agents and Automate Workflows with n8n",
+          "url": "https://www.linkedin.com/learning/certificates/d0595d02edc73d30582cc2b9acbce75a54edfe18c5baab8898490b3248b72856"
+        },
+        {
+          "icon": "simple-icons:python",
+          "title": "Advance Python Projects: Build AI Applications",
+          "url": "https://www.linkedin.com/learning/certificates/9748aa704e53ddac200bce2e3f47262e2c0f1d0a5b95b1a937bc727be2b46dc2"
+        },
+        {
+          "icon": "mdi:linkedin",
+          "title": "DevOps Foundations: Continuous Delivery/Continuous Integration",
+          "url": "https://www.linkedin.com/learning/certificates/681726d921db9b9aa9c650be67ee53e55628b10863b0fa31ce872d7722eb5652"
+        },
+        {
+          "icon": "mdi:kubernetes",
+          "title": "Learning Kubernetes",
+          "url": "https://www.linkedin.com/learning/certificates/ebbc1603b792add5f223acd15e3d7ee5a44466d1bb62aa5e38dc0b7b4a67e12f"
+        },
+        {
+          "icon": "simple-icons:python",
+          "title": "Machine Learning with Python: Foundations",
+          "url": "https://www.linkedin.com/learning/certificates/61fbbe1b3ed7a51ce2311a1c88c56d3fd1816d572b2850af7de8fb798ee9cc9f"
+        },
+        {
+          "icon": "mdi:github",
+          "title": "Practical GitHub Actions",
+          "url": "https://www.linkedin.com/learning/certificates/a34535f6c4d871807741280db62d30b5f2a45c2ec709a6d7f578f98a302a5306"
+        },
+        {
+          "icon": "mdi:github",
+          "title": "Practical GitHub Copilot",
+          "url": "https://www.linkedin.com/learning/certificates/05580a3b9c0a6d1c080e7399f41f39f7f92c3a75dc547c20a3f79960e3a9a6a3"
+        },
+        {
+          "icon": "mdi:github",
+          "title": "Practical GitHub Project Management and Collaboration",
+          "url": "https://www.linkedin.com/learning/certificates/434b56d6ca83127160db6ed010030ae50fcf2a46ee013a032f29e950ddeff415"
+        },
+        {
+          "icon": "simple-icons:langflow",
+          "title": "Build AI Apps Fast: Master Langflow Step by Step",
+          "url": "https://www.udemy.com/certificate/UC-c1c45969-fe9f-4653-8b5c-3c16cd677f17/"
+        },
+        {
+          "icon": "mdi:linkedin",
+          "title": "AI Engineering Essentials: Navigating the Tech Revolution",
+          "url": "https://www.linkedin.com/learning/certificates/96352467de8e16bf1ee1f946d0a8c6cf3444c1d57c9d350495ecba76b477c67d"
+        },
+        {
+          "icon": "mdi:azure",
+          "title": "Azure: create a REST API using NodeJS Serverless Functions",
+          "url": "https://www.coursera.org/account/accomplishments/verify/JB4QMYR21SAU"
+        },
+        {
+          "icon": "mdi:azure",
+          "title": "Build a computer vision app with Azure Cognitive Services",
+          "url": "https://www.coursera.org/account/accomplishments/verify/O5XTRP56W6DR"
+        },
+        {
+          "icon": "mdi:wordpress",
+          "title": "Increase SEO Traffic with WordPress",
+          "url": "https://www.coursera.org/account/accomplishments/verify/GQC0UKSP2XDO"
+        },
+        {
+          "icon": "mdi:react",
+          "title": "Next JS: The Complete Developer's Guide",
+          "url": "https://www.udemy.com/certificate/UC-66005388-8bdb-49ab-9df9-d507342a66c6/"
+        }
+      ]
+    }
+  ],
   "skills": [
     {
       "name": "PHP",
