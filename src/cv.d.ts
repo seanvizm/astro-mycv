@@ -62,10 +62,12 @@ interface Skill {
 }
 
 interface Certificate {
-  name: string;
-  date: DateStr;
-  issuer: string;
+  icon: string,
+  title: string;
+  date?: DateStr;
+  issuer?: string;
   url: URL;
+  imageSrc?: string;
 }
 
 interface Publication {

@@ -334,6 +334,12 @@
       "category": "Professional Certificates",
       "list" : [
         {
+          "icon": "mdi:lambdatest",
+          "title": "LambdaTest Test Automation Professional Certificate",
+          "url": "https://www.linkedin.com/learning/certificates/258e88930a0e6c6a3b78182247cd7146f7c3e61e1c2ce3efb4510a01576093d6",
+          "imageSrc": "https://media.licdn.com/dms/image/v2/D4E22AQEizQocrnwwyw/feedshare-shrink_1280/B4EZnetFFBIIAs-/0/1760377983643?e=2147483647&v=beta&t=Z0Y6LjaALQr89FkbKVzLLE58jg7ZRuzlSTkkZHAYzRo"
+        },
+        {
           "icon": "mdi:github",
           "title": "Career Essentials in Github Professional Certificate",
           "url": "https://www.linkedin.com/learning/certificates/8d346614aa55164a1b9774e5c818dea24d58ce15610ba809579177e295d0ba11",
