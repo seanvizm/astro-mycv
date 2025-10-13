@@ -56,6 +56,6 @@ if (mq.matches) {
 	});
 	
 	container.style.scrollBehavior = "smooth";
-	container.style.cursor = "none";
+	// container.style.cursor = "none";
 }
 
