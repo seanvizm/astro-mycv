@@ -13,7 +13,7 @@ const millisecondsInYear = 1000 * 60 * 60 * 24 * 365
       const endYear = endDate != null ? new Date(endDate).getFullYear() : "Present"
       const timeLapse = (endDate!=null?new Date(endDate).getTime():new Date().getTime()) - new Date(startDate).getTime()
       const workedYears = Math.floor(+timeLapse/millisecondsInYear)
-      const workedMonths = Math.floor((+timeLapse % millisecondsInYear) / (millisecondsInYear / 12))
+      const workedMonths = Math.floor((+timeLapse % millisecondsInYear) / (millisecondsInYear / 12)) + 1
       const workedTime = `${workedYears}y : ${workedMonths}m`
       const workedDatetime = `P${workedYears}Y${workedMonths}M`
       return (

@@ -21,7 +21,7 @@ import { Image } from 'astro:assets'
 
               <div class="mt-4  print:gap-0 flex flex-col gap-4 print:text-xs text-sm">
                 {category && (
-                  <h4 class="print:font-bold print:pt-1 text-nowrap" data-ccursor="lift">{category}: <small>({list.length} certificates)</small></h4>
+                  <h4 class="print:font-bold print:pt-1 text-nowrap" data-ccursor="lift">{category}: {list.length > 0 && (<small>({list.length} certificates)</small>)}</h4>
                   <ul class="flex print:hidden flex-wrap gap-2" aria-label={category}>
                     {list && list.map(({icon, title, url, imageSrc}) => (
                         <li data-ccursor="lift" class="bg-skin-button-accent/20 border-skin-hue/20 text-skin-hue print:p-0 print:bg-transparent print:text-zinc-800 flex gap-1 items-center border-solid print:border-none border rounded-md px-2 py-1 text-xs backdrop-blur-sm select-none">
