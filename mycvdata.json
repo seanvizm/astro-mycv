@@ -334,6 +334,12 @@
       "category": "Professional Certificates",
       "list" : [
         {
+          "icon": "mdi:microsoftazure",
+          "title": "Microsoft Azure AI Essentials Professional Certificate",
+          "url": "https://www.linkedin.com/learning/certificates/91f0050d0b8bb0dcf037f0aa55333cafcb2a6ec788e4d284118c5e90dabdc591",
+          "imageSrc": "https://media.licdn.com/dms/image/v2/D4E22AQFUpHVzlZNq4Q/feedshare-shrink_1280/B4EZn4aat9GoAs-/0/1760809299077?e=2147483647&v=beta&t=pUJvOYlSmaHCA8254exDY8DuIcvUZ-M9295mssClqGU"
+        },
+        {
           "icon": "mdi:lambdatest",
           "title": "LambdaTest Test Automation Professional Certificate",
           "url": "https://www.linkedin.com/learning/certificates/258e88930a0e6c6a3b78182247cd7146f7c3e61e1c2ce3efb4510a01576093d6",
