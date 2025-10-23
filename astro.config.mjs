@@ -8,6 +8,11 @@ import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
+  vite: {
+    server: {
+      allowedHosts: ['piosbox.tplinkdns.com','piosbox.local','mbp-m2.local', 'localhost', '127.0.0.1'], // Add your allowed hosts here
+    },
+  },
   integrations: [
     tailwind(),
     mdx(),
