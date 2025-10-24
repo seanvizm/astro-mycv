@@ -549,6 +549,16 @@
       "icon": "simple-icons:postgresql"
     },
     {
+      "name": "MSSQL",
+      "level": "Advanced",
+      "icon": "simple-icons:microsoftsqlserver"
+    },
+    {
+      "name": "Cassandra",
+      "level": "Intermediate",
+      "icon": "simple-icons:apachecassandra"
+    },
+    {
       "name": "GraphQL",
       "level": "Advanced",
       "icon": "simple-icons:graphql"
@@ -557,6 +567,11 @@
       "name": "JavaScript",
       "level": "Advanced",
       "icon": "simple-icons:javascript"
+    },
+    {
+      "name": "jQuery",
+      "level": "Advanced",
+      "icon": "simple-icons:jquery"
     },
     {
       "name": "AlpineJS",
@@ -572,6 +587,11 @@
       "name": "ReactJS",
       "level": "Intermediate",
       "icon": "simple-icons:react"
+    },
+    {
+      "name": "Astro",
+      "level": "Intermediate",
+      "icon": "simple-icons:astro"
     },
     {
       "name": "C#.NET",
@@ -600,6 +620,11 @@
     },
     {
       "name": "Rust",
+      "level": "Intermediate",
+      "icon": "simple-icons:rust"
+    },
+    {
+      "name": "Axum",
       "level": "Intermediate",
       "icon": "simple-icons:rust"
     },
