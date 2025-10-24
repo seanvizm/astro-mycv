@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://yong-ai.dev/sitemap.xml 
+Sitemap: https://yong.dev/sitemap.xml 
