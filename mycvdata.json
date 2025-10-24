@@ -328,7 +328,15 @@
       }
     }
   ],
-  "education": [],
+  "education": [
+    {
+      "institution": "Batangas State University",
+      "startDate": "June 1999", 
+      "endDate": "April 2003", 
+      "course": "Bachelor of Industrial Technology Major in Computer Engineering Technology", 
+      "url": "https://batstateu.edu.ph"
+    }
+  ],
   "certificates": [
     {
       "category": "Professional Certificates",

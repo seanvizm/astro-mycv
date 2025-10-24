@@ -20,16 +20,18 @@ const {
   image_bg = CV.basics.image_bg,
   canonicalURL = CV.basics.url,
   keywords = [
+    "Software Engineer",
     "Full Stack Developer",
     "Frontend Developer",
     "Backend Developer",
     "Web Developer",
-    "Software Engineer",
     "Php Developer",
     "Laravel Developer",
     "Wordpress Developer",
     "E-commerce Projects",
     "C# .NET Developer",
+    "Javascript Developer",
+    "jQuery Developer",
     "React Developer",
     "Next.js Developer",
     "VueJs Developer",
@@ -44,7 +46,7 @@ const {
 } = Astro.props;
 
 const { url, theme, name, location } = CV.basics;
-const { city, region } = location;
+const { city, region, countryCode } = location;
 
 // Create a more detailed description
 const detailedDescription = `Full Stack Software Developer. Explore my CV, projects, and contact info. frontend, backend, and more.`;
@@ -67,7 +69,7 @@ const structuredData = {
     "@type": "PostalAddress",
     "addressLocality": city,
     "addressRegion": region,
-    "addressCountry": "IN"
+    "addressCountry": countryCode
   },
   "knowsAbout": CV.skills.map(skill => skill.name),
   "worksFor": CV.work?.map(work => ({

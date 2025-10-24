@@ -81,12 +81,12 @@ interface Publication {
 interface Education {
   institution: string;
   url: URL;
-  area: string;
+  course: string;
   studyType: string;
   startDate: DateStr;
   endDate: DateStr;
-  score?: string;
   courses?: Array<string>;
+  score?: string;
 }
 
 interface Language {
