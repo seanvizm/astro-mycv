@@ -19,7 +19,7 @@
       "country": "Philippines"
     },
     "phone": "",
-    "last_updated": "October 12, 2025",
+    "last_updated": "October 24, 2025",
     "profiles": [
       {
         "network": "GitHub",
@@ -44,6 +44,7 @@
       }
     ]
   },
+  "hidden": ["education"],
   "work": [
     {
       "name": "Cubewise AI",

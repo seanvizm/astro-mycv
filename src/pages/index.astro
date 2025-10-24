@@ -10,6 +10,7 @@ import Certificates from "@/components/sections/Certificates.astro";
 import Education from "@/components/sections/Education.astro";
 import KeyboardManager from "@/components/KeyboardManager.astro";
 import ThemeSwitch from "@/components/ThemeSwitch.astro";
+import { hidden } from "@mycvdata";
 ---
 
 <Layout title="Curriculum Vitae">
@@ -26,14 +27,14 @@ import ThemeSwitch from "@/components/ThemeSwitch.astro";
     <div
       class="slide-enter-content space-y-12 md:col-span-4 print:grid print:grid-cols-5 print:grid-flow-row print:gap-2 print:space-y-0"
     >
-      <Experience className="print:col-span-3" />
+      {!hidden.includes("work") && <Experience className="print:col-span-3" />}
       {
         (
           <>
-            <Projects className="print:hidden" />
-            <Skills className="print:col-span-full" />
-            <Certificates className="print:col-span-full" />
-            <Education className="print:col-span-full" />
+            {!hidden.includes("projects") && <Projects className="print:hidden" />}
+            {!hidden.includes("skills") && <Skills className="print:col-span-full" />}
+            {!hidden.includes("certificates") && <Certificates className="print:col-span-full" />}
+            {!hidden.includes("education") && <Education className="print:col-span-full" />}
           </>
         )
       }
