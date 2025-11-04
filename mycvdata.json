@@ -19,7 +19,7 @@
       "country": "Philippines"
     },
     "phone": "",
-    "last_updated": "October 24, 2025",
+    "last_updated": "November 4, 2025",
     "profiles": [
       {
         "network": "GitHub",
@@ -58,7 +58,7 @@
       "responsibilities": [
         {
           "title": "Low-code Data Management System",
-          "details": "This is significantly a self-made generic tool that can be use practically in any type of business operation that could empower users to manage data exploration and virtualization effectively. Fill with custom fields and data relationships, dynamic page contents & menu navigation, and custom modules / virtual tables that can all be dynamically managed with its admin application, with built-in user roles & rights and packed with API automation & documentation which can really demonstrates the ability to build flexible and scalable solutions that reduce development time and effort."
+          "details": "This is significantly a self-made low-code/configuration-first generic tool that define data models. Instead of requiring developers to hand-code every administrative page, the system will dynamically generate the necessary data tables, forms and pages based on admin configuration, with built-in user roles & rights, and packed with API automation & documentation which can really demonstrates the ability to build flexible and scalable solutions that reduce development time and effort. "
         },
         {
           "title": "Central Site Management",
@@ -66,7 +66,7 @@
         },
         {
           "title": "Data Table Generic Component",
-          "details": "This component allows for rapid creation of tables with various built-in functionalities, including automation for API data sources, form input, column filtering & sorting, pagination, charts & graphs view, bulk data importing, and CRUD operations, streamlining the development process and promoting code reusability."
+          "details": "This component allows for rapid creation of tables with various built-in functionalities, including automation for API data sources, form input, column filtering & sorting, pagination, charts & graphs view, bulk data importing/exporting and CRUD operations, streamlining the development process and promoting code reusability."
         }
       ],
       "skills": {
@@ -372,6 +372,18 @@
       "list": [
         {
           "icon": "mdi:linkedin",
+          "title": "Introduction to AI-Native Vector Database",
+          "url": "https://www.linkedin.com/learning/certificates/ecb6cb1e7e4e177a83a737ae9cc37b20c21730170440e5134f5c18b2bbd32b64",
+          "imageSrc": ""
+        },
+        {
+          "icon": "mdi:linkedin",
+          "title": "Vector Database in Practice: Deep Dive",
+          "url": "https://www.linkedin.com/learning/certificates/cfeb08997f1c7860942359eb12bda19aa07ca0eaaddb283b94a4bf928758bf41",
+          "imageSrc": ""
+        },
+        {
+          "icon": "mdi:linkedin",
           "title": "10-in-10 AI Challenge",
           "url": "https://www.linkedin.com/learning/certificates/5bb0c96bcf6b7dbb87ec0b339a7c26f7016dd61b5a7849983450eda21b5e4c24",
           "imageSrc": ""
@@ -398,6 +410,12 @@
           "icon": "mdi:linkedin",
           "title": "Using AI as Your SEO Assistant",
           "url": "https://www.linkedin.com/learning/certificates/4c3feaff3ea6462b12b256cc0fecaad3370c2b36dc764b0a38494ccfbe6d07e6",
+          "imageSrc": ""
+        },
+        {
+          "icon": "simple-icons:python",
+          "title": "Using Python for Automation",
+          "url": "https://www.linkedin.com/learning/certificates/e66055df8cc299f5e60c974bb2fd144ea91f1f70e507a959b2b33cd54264c086",
           "imageSrc": ""
         },
         {
@@ -456,12 +474,6 @@
           "icon": "mdi:linkedin",
           "title": "Test Automation Foundation",
           "url": "https://www.linkedin.com/learning/certificates/da2ebdc9da9fb689eac4c2985e29f845319b31d53d992bd49c75ca3a5f1b5971",
-          "imageSrc": ""
-        },
-        {
-          "icon": "simple-icons:python",
-          "title": "Using Python for Automation",
-          "url": "https://www.linkedin.com/learning/certificates/e66055df8cc299f5e60c974bb2fd144ea91f1f70e507a959b2b33cd54264c086",
           "imageSrc": ""
         },
         {
@@ -671,6 +683,83 @@
   "projects": [
     {
       "langIcon": "simple-icons:rust",
+      "name": "Rust Hybrid Workflow Engine",
+      "isActive": true,
+      "description": "This is a powerful orchestration tool that allows you to define complex multi-step workflows using Lua configuration files, with automatic dependency resolution and data passing between steps.",
+      "highlights": [
+        "Code-First Declarative Configuration: Define workflows using intuitive Lua syntax",
+        "Data Processing Pipelines: Chain together data fetching, transformation, and storage operations",
+        "DevOps Automation: Combine shell commands, Python scripts, JavaScript automation, and Lua logic for deployment workflows",
+        "Multi-Language Projects: Leverage the best of each language in a single workflow",
+        "Complex Orchestration: Handle intricate dependency graphs with automatic topological sorting"
+      ],
+      "stack": {
+        "Rust": "simple-icons:rust",
+        "Lua" : "simple-icons:lua",
+        "Python": "simple-icons:python",
+        "NodeJs": "mdi:nodejs",
+        "Web Assembly": "simple-icons:webassembly",
+        "Swagger": "simple-icons:swagger"
+      },
+      "url": "",
+      "github": "https://github.com/seanvizm/rust-hybrid-workflow"
+    },
+    {
+      "langIcon": "simple-icons:rust",
+      "name": "Rust Distributed Workflow Engine",
+      "isActive": true,
+      "description": "A lightweight distributed workflow orchestration engine written in Rust. This repository is a working foundation for orchestrating tasks across complex pipelines and includes a Swagger UI for API exploration and testing.",
+      "highlights": [
+        "DAG-based workflows with tasks and edges",
+        "Multiple built-in task types: Shell, HTTP, Python, Transform, Notify, Custom",
+        "Task retries, status tracking, and results (output, error, execution time)",
+        "REST API for creating, listing, starting, and managing workflows",
+        "Real-time updates via WebSocket (powered by Redis pub/sub)",
+        "Redis-backed event history (configurable size)",
+        "Swagger / OpenAPI documentation (Utoipa + Swagger UI)",
+        "Multi-stage Docker-friendly layout for container deployments"
+      ],
+      "stack": {
+        "Rust": "simple-icons:rust",
+        "Axum": "simple-icons:rust",
+        "Tokio Async Runtime": "simple-icons:rust",
+        "Python": "simple-icons:python",
+        "WebSocket": "mdi:web",
+        "Redis": "simple-icons:redis",
+        "Swagger": "simple-icons:swagger"
+      },
+      "url": "",
+      "github": "https://github.com/seanvizm/rust-workflow"
+    },
+    {
+      "langIcon": "simple-icons:rust",
+      "name": "Rust Data Management System",
+      "isActive": true,
+      "description": "The key concept here is to use a Low-Code/Configuration-First approach, instead of hand-coding every admin page, you define the data structure and business logic, and the system auto-generates the necessary user interface (UI) to manage it.",
+      "highlights": [
+        "Data Schema Definition: User, Product) using simple configuration files (e.g., JSON, YAML).",
+        "Dynamic UI Generation: The Rust backend reads the data schema and dynamically renders the appropriate front-end components.",
+        "Relationship Handling: Specifies foreign key relationships (e.g., a Product belongs to a Category).",
+        "Custom Actions: Defines complex business logic actions that can be triggered directly from the admin UI (e.g., Process Payment).",
+        "Dashboard: Display of Key Performance Indicators (KPIs), real-time system status checks (Rust service health), and recent critical activity logs.",
+        "List View: Dynamic, auto-generated tables with support for server-side searching, filtering, sorting, and pagination.",
+        "Detail/Edit View: Dynamic forms, populated with data based on the schema, allowing for granular viewing and updating of single records.",
+        "User & Role Management: Standardized pages for creating and managing admin accounts and implementing Role-Based Access Control (RBAC) to govern what CRUD operations a user can perform on specific resources."
+      ],
+      "stack": {
+        "Rust": "simple-icons:rust",
+        "Axum": "simple-icons:rust",
+        "Astro": "simple-icons:astro",
+        "Tailwind": "mdi:tailwind",
+        "Web Assembly": "simple-icons:webassembly",
+        "Swagger": "simple-icons:swagger",
+        "Docker": "mdi:docker"
+      },
+      "url": "",
+      "github": "https://github.com/seanvizm/rust-admin"
+    },
+    {
+      "langIcon": "simple-icons:rust",
       "name": "Rust Cassandra Graph API",
       "isActive": true,
       "description": "A high-performance graph database API built with Rust, Axum, and Apache Cassandra. This project provides a RESTful API for managing graph data with nodes and edges, complete with interactive Swagger documentation.",
@@ -710,7 +799,7 @@
         "GSAP": "simple-icons:greensock",
         "Tailwind": "mdi:tailwind"
       },
-      "url": "",
+      "url": "https://seanvizm.github.io/astro-mycv/",
       "github": "https://github.com/seanvizm/astro-mycv"
     }
 
