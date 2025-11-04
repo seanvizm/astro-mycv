@@ -144,7 +144,7 @@
     },
     {
       "name": "Actino Inc.",
-      "position": "Team Lead / Fullstack Software Developer",
+      "position": "Team Lead / Fullstack Software Engineer",
       "location_type": "Remote - Europe Timezone",
       "location": "Luxembourg, Luxembourg",
       "url": "https://change4win.com/",
@@ -683,30 +683,6 @@
   "projects": [
     {
       "langIcon": "simple-icons:rust",
-      "name": "Rust Hybrid Workflow Engine",
-      "isActive": true,
-      "description": "This is a powerful orchestration tool that allows you to define complex multi-step workflows using Lua configuration files, with automatic dependency resolution and data passing between steps.",
-      "highlights": [
-        "Code-First Declarative Configuration: Define workflows using intuitive Lua syntax",
-        "Data Processing Pipelines: Chain together data fetching, transformation, and storage operations",
-        "DevOps Automation: Combine shell commands, Python scripts, JavaScript automation, and Lua logic for deployment workflows",
-        "Multi-Language Projects: Leverage the best of each language in a single workflow",
-        "Complex Orchestration: Handle intricate dependency graphs with automatic topological sorting"
-      ],
-      "stack": {
-        "Rust": "simple-icons:rust",
-        "Lua" : "simple-icons:lua",
-        "Python": "simple-icons:python",
-        "NodeJs": "mdi:nodejs",
-        "Web Assembly": "simple-icons:webassembly",
-        "REST API": "mdi:api",
-        "Swagger": "simple-icons:swagger"
-      },
-      "url": "",
-      "github": "https://github.com/seanvizm/rust-hybrid-workflow"
-    },
-    {
-      "langIcon": "simple-icons:rust",
       "name": "Rust Distributed Workflow Orchestration",
       "isActive": true,
       "description": "A lightweight distributed workflow orchestration engine written in Rust. This repository is a working foundation for orchestrating tasks across complex pipelines and includes a Swagger UI for API exploration and testing.",
@@ -728,10 +704,34 @@
         "WebSocket": "mdi:web",
         "Redis": "simple-icons:redis",
         "REST API": "mdi:api",
-        "Swagger": "simple-icons:swagger"
+        "Swagger": "simple-icons:swagger",
+        "Docker": "mdi:docker"
       },
       "url": "",
       "github": "https://github.com/seanvizm/rust-workflow"
+    },
+    {
+      "langIcon": "simple-icons:rust",
+      "name": "Rust Hybrid Workflow Engine",
+      "isActive": true,
+      "description": "This is a powerful orchestration tool that allows you to define complex multi-step workflows using Lua configuration files, with automatic dependency resolution and data passing between steps.",
+      "highlights": [
+        "Code-First Declarative Configuration: Define workflows using intuitive Lua syntax",
+        "Data Processing Pipelines: Chain together data fetching, transformation, and storage operations",
+        "DevOps Automation: Combine shell commands, Python scripts, JavaScript automation, and Lua logic for deployment workflows",
+        "Multi-Language Projects: Leverage the best of each language in a single workflow",
+        "Complex Orchestration: Handle intricate dependency graphs with automatic topological sorting"
+      ],
+      "stack": {
+        "Rust": "simple-icons:rust",
+        "Lua" : "simple-icons:lua",
+        "Python": "simple-icons:python",
+        "NodeJs": "mdi:nodejs",
+        "Web Assembly Module": "simple-icons:webassembly",
+        "Shell Command": "mdi:bash"
+      },
+      "url": "",
+      "github": "https://github.com/seanvizm/rust-hybrid-workflow"
     },
     {
       "langIcon": "simple-icons:rust",
