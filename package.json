@@ -6,6 +6,7 @@
     "dev": "astro dev --host",
     "start": "astro dev",
     "build": "astro check && astro build",
+    "build:github": "astro check && astro build --config astro.config.github.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "deploy:vercel": "vercel deploy",
