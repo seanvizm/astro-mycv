@@ -3,7 +3,7 @@ import { basics } from '@mycvdata'
 import Section from '@/components/Section.astro'
 import { Icon } from 'astro-icon/components'
 import { Image } from 'astro:assets'
-const { name, secondary_label, main_label, image, image_bg, location, email, phone, last_updated } = basics
+const { name, secondary_label, main_label, url, image, image_bg, location, email, phone, last_updated } = basics
 const { region, country } = location
 ---
 
@@ -22,14 +22,14 @@ const { region, country } = location
             class='absolute scale-100 -mt-12 -ms-4 max-h-24'
             height={101}
             width={408}}
-            src={image_bg}
+            src={(url ? url : '') + image_bg}
             alt="Profile background"
             loading='eager' />)}
           {image && (<Image
             class='profile -mt-4 scale-110 sm:scale-100 transition-all sm:group-hover:scale-110 sm:group-hover:grayscale border-gray-75 border-2'
             height={100}
             width={100}
-            src={image}
+            src={(url ? url : '') + image}
             alt={`Profile of ${name}`}
             loading='eager' />)}
         </figure>

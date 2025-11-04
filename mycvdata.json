@@ -6,11 +6,11 @@
     "main_label": "Engineer",
     "secondary_label": "Software",
     "other_label": "AI/ML",
-    "image": "/me_coding.png",
-    "image_bg": "/Concept2Code.png",
+    "image": "me.jpg",
+    "image_bg": "Concept2Code.png",
     "email": "vizmara@gmail.com",
     "theme": "mystical",
-    "url": "https://www.linkedin.com/in/seanvizm/",
+    "url": "https://seanvizm.github.io/astro-mycv/",
     "summary": "Pushing business concept to code, problem to solution and keeping things simple. 🌀",
     "location": {
       "city": "",
@@ -40,7 +40,7 @@
         "icon": "mdi:web",
         "color": "#929AAB",
         "username": "www",
-        "url": "/"
+        "url": "https://seanvizm.github.io/astro-mycv"
       }
     ]
   },
@@ -699,6 +699,7 @@
         "Python": "simple-icons:python",
         "NodeJs": "mdi:nodejs",
         "Web Assembly": "simple-icons:webassembly",
+        "REST API": "mdi:api",
         "Swagger": "simple-icons:swagger"
       },
       "url": "",
@@ -706,7 +707,7 @@
     },
     {
       "langIcon": "simple-icons:rust",
-      "name": "Rust Distributed Workflow Engine",
+      "name": "Rust Distributed Workflow Orchestration",
       "isActive": true,
       "description": "A lightweight distributed workflow orchestration engine written in Rust. This repository is a working foundation for orchestrating tasks across complex pipelines and includes a Swagger UI for API exploration and testing.",
       "highlights": [
@@ -726,6 +727,7 @@
         "Python": "simple-icons:python",
         "WebSocket": "mdi:web",
         "Redis": "simple-icons:redis",
+        "REST API": "mdi:api",
         "Swagger": "simple-icons:swagger"
       },
       "url": "",
