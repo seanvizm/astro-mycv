@@ -40,7 +40,7 @@
         "icon": "mdi:web",
         "color": "#929AAB",
         "username": "www",
-        "url": "https://seanvizm.github.io/astro-mycv"
+        "url": "https://seanvizm.github.io/astro-mycv/"
       }
     ]
   },
@@ -698,12 +698,11 @@
       ],
       "stack": {
         "Rust": "simple-icons:rust",
-        "Axum": "simple-icons:rust",
+        "Axum REST API": "simple-icons:rust",
+        "Redis": "simple-icons:redis",
         "Tokio Async Runtime": "simple-icons:rust",
         "Python": "simple-icons:python",
         "WebSocket": "mdi:web",
-        "Redis": "simple-icons:redis",
-        "REST API": "mdi:api",
         "Swagger": "simple-icons:swagger",
         "Docker": "mdi:docker"
       },
@@ -727,8 +726,13 @@
         "Lua" : "simple-icons:lua",
         "Python": "simple-icons:python",
         "NodeJs": "mdi:nodejs",
-        "Web Assembly Module": "simple-icons:webassembly",
-        "Shell Command": "mdi:bash"
+        "WebAssembly": "simple-icons:webassembly",
+
+        "Shell/Bash": "mdi:bash",
+        "Leptos": "simple-icons:leptos",
+        "Axum REST API": "simple-icons:rust",
+
+        "WebSocket": "mdi:web"
       },
       "url": "",
       "github": "https://github.com/seanvizm/rust-hybrid-workflow"
@@ -750,12 +754,11 @@
       ],
       "stack": {
         "Rust": "simple-icons:rust",
-        "Axum": "simple-icons:rust",
+        "Leptos": "simple-icons:leptos",
         "Astro": "simple-icons:astro",
+        "Docker": "mdi:docker",
         "Tailwind": "mdi:tailwind",
-        "Web Assembly": "simple-icons:webassembly",
-        "Swagger": "simple-icons:swagger",
-        "Docker": "mdi:docker"
+        "WebAssembly": "simple-icons:webassembly"
       },
       "url": "",
       "github": "https://github.com/seanvizm/rust-admin"
@@ -776,7 +779,7 @@
       ],
       "stack": {
         "Rust": "simple-icons:rust",
-        "Axum": "simple-icons:rust",
+        "Axum REST API": "simple-icons:rust",
         "Cassandra": "simple-icons:apachecassandra",
         "Swagger": "simple-icons:swagger",
         "Docker-Compose": "mdi:docker"
@@ -799,7 +802,8 @@
         "React": "simple-icons:react",
         "TypeScript": "simple-icons:typescript",
         "GSAP": "simple-icons:greensock",
-        "Tailwind": "mdi:tailwind"
+        "Tailwind": "mdi:tailwind",
+        "Daisy UI": "simple-icons:daisyui"
       },
       "url": "https://seanvizm.github.io/astro-mycv/",
       "github": "https://github.com/seanvizm/astro-mycv"
