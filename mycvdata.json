@@ -66,7 +66,7 @@
         },
         {
           "title": "Data Table Generic Component",
-          "details": "This component allows for rapid creation of tables with various built-in functionalities, including automation for API data sources, form input, column filtering & sorting, pagination, charts & graphs view, bulk data importing/exporting and CRUD operations, streamlining the development process and promoting code reusability."
+          "details": "This component allows for rapid creation of tables with various built-in functionalities, including automation for API data sources, form input, inline editing, column resizing, filtering & sorting, pagination, charts & graphs view, bulk data importing/exporting and CRUD operations, streamlining the development process and promoting code reusability."
         }
       ],
       "skills": {
@@ -358,13 +358,13 @@
           "icon": "mdi:github",
           "title": "Career Essentials in Github Professional Certificate",
           "url": "https://www.linkedin.com/learning/certificates/8d346614aa55164a1b9774e5c818dea24d58ce15610ba809579177e295d0ba11",
-          "imageSrc": "https://media.licdn.com/dms/image/v2/D4E22AQE3sClr6Sf3sA/feedshare-shrink_800/B4EZh2Qs.VGUAk-/0/1754330747186?e=1762992000&v=beta&t=My7XPSAgcD_JE8J841jYhDc4GaDBylWAs5qrLkqyqYE"
+          "imageSrc": "https://media.licdn.com/dms/image/v2/D4E22AQE3sClr6Sf3sA/feedshare-shrink_800/B4EZh2Qs.VGUAk-/0/1754330747186?e=1764806400&v=beta&t=y7u3yfDcA_U6EG0dL3bHxbUeayLhorGcqtcOBig4ZiY"
         },
         {
           "icon": "mdi:docker",
           "title": "Docker Foundations Professional Certificate",
           "url": "https://www.linkedin.com/learning/certificates/10c5fe79d57fa14ae0d26c940a02bd36f1427cd56643480bc6c32a8554fca522",
-          "imageSrc": "https://media.licdn.com/dms/image/v2/D4E22AQE6gMgiYEulVg/feedshare-shrink_800/B4EZguBhfAGcAg-/0/1753118808294?e=1762992000&v=beta&t=LhbV302-IY6rc_eYpMQ-rYEgiMB2cTf44eD-dtCfG28"
+          "imageSrc": "https://media.licdn.com/dms/image/v2/D4E22AQE6gMgiYEulVg/feedshare-shrink_800/B4EZguBhfAGcAg-/0/1753118808294?e=1764806400&v=beta&t=nKHlr90HX06y2KtSTVQakwzBSQqj946Td4dnN3qLNic"
         }
       ]
     },{
