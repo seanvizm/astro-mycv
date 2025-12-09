@@ -5,7 +5,7 @@ import { Icon } from "astro-icon/components";
 import { projects } from "@mycvdata";
 ---
 
-<Section className={Astro.props.className} title="Open Source Projects">
+<Section className={Astro.props.className} title="Personal Projects">
   <div class="grid grid-cols-1 gap-3 md:grid-cols-2 print:flex print:flex-col">
     {
       projects && projects.map(
@@ -60,16 +60,19 @@ import { projects } from "@mycvdata";
                   {description}
                 </p>
                 <ul class='text-sm'>
-                  {highlights.map((highlight) => {
+                  {highlights && highlights.map((highlight) => {
                     return <li data-ccursor class="text-wrap">{highlight}</li>;
                   })}
                 </ul>
               </div>
-              <button data-ccursor="lift" class=" expand-button-projects mt-2 print:hidden group/more w-fit cursor-pointer items-center justify-center gap-1.5 text-xs underline text-skin-muted transition-all flex">
-                <span class="expand-text-projects">Show more</span>
-                <Icon name="ri:arrow-down-s-line" class="w-4 h-4 group-hover/more:translate-y-0.5 duration-200 ease-out group-data-[expanded=true]:rotate-180" width={24} height={24}></Icon>
-              </button>
 
+              {highlights && (
+                <button data-ccursor="lift" class=" expand-button-projects mt-2 print:hidden group/more w-fit cursor-pointer items-center justify-center gap-1.5 text-xs underline text-skin-muted transition-all flex">
+                  <span class="expand-text-projects">Show more</span>
+                  <Icon name="ri:arrow-down-s-line" class="w-4 h-4 group-hover/more:translate-y-0.5 duration-200 ease-out group-data-[expanded=true]:rotate-180" width={24} height={24}></Icon>
+                </button>
+              )}
+              
               <ul class="flex print:hidden flex-wrap gap-2 mt-4" aria-label="Technologies used">
                 {stack && Object.entries(stack).map(([label, icon]) => (
                   <li data-ccursor="lift" class="border-skin-hue/60 text-skin-hue print:p-0 print:bg-transparent print:text-zinc-800 flex gap-1 items-center border-solid print:border-none border rounded-md px-2 py-0.5 text-xs backdrop-blur-sm group/stack">

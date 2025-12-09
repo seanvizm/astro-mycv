@@ -19,7 +19,7 @@
       "country": "Philippines"
     },
     "phone": "",
-    "last_updated": "November 4, 2025",
+    "last_updated": "December 9, 2025",
     "profiles": [
       {
         "network": "GitHub",
@@ -358,13 +358,13 @@
           "icon": "mdi:github",
           "title": "Career Essentials in Github Professional Certificate",
           "url": "https://www.linkedin.com/learning/certificates/8d346614aa55164a1b9774e5c818dea24d58ce15610ba809579177e295d0ba11",
-          "imageSrc": "https://media.licdn.com/dms/image/v2/D4E22AQE3sClr6Sf3sA/feedshare-shrink_800/B4EZh2Qs.VGUAk-/0/1754330747186?e=1764806400&v=beta&t=y7u3yfDcA_U6EG0dL3bHxbUeayLhorGcqtcOBig4ZiY"
+          "imageSrc": "https://media.licdn.com/dms/image/v2/D4E22AQE3sClr6Sf3sA/feedshare-shrink_800/B4EZh2Qs.VGUAk-/0/1754330747186?e=1766620800&v=beta&t=a8wZ330-KEEv1UPDIgla1p_3VJEsewb7xs94VMQlgcc"
         },
         {
           "icon": "mdi:docker",
           "title": "Docker Foundations Professional Certificate",
           "url": "https://www.linkedin.com/learning/certificates/10c5fe79d57fa14ae0d26c940a02bd36f1427cd56643480bc6c32a8554fca522",
-          "imageSrc": "https://media.licdn.com/dms/image/v2/D4E22AQE6gMgiYEulVg/feedshare-shrink_800/B4EZguBhfAGcAg-/0/1753118808294?e=1764806400&v=beta&t=nKHlr90HX06y2KtSTVQakwzBSQqj946Td4dnN3qLNic"
+          "imageSrc": "https://media.licdn.com/dms/image/v2/D4E22AQE6gMgiYEulVg/feedshare-shrink_800/B4EZguBhfAGcAg-/0/1753118808294?e=1766620800&v=beta&t=Adfxc-bGK9KIiffQHj-GwSNs3Son1w8vDj8R_v92Sgw"
         }
       ]
     },{
@@ -550,6 +550,11 @@
       "icon": "simple-icons:livewire"
     },
     {
+      "name": "InertiaJS",
+      "level": "Advanced",
+      "icon": "simple-icons:inertia"
+    },
+    {
       "name": "WordPress",
       "level": "Advanced",
       "icon": "simple-icons:wordpress"
@@ -605,7 +610,7 @@
       "icon": "mdi:vuejs"
     },
     {
-      "name": "ReactJS",
+      "name": "NextJS / ReactJS",
       "level": "Intermediate",
       "icon": "simple-icons:react"
     },
@@ -682,6 +687,74 @@
   ],
   "projects": [
     {
+      "langIcon": "simple-icons:astro",
+      "name": "My Curriculum Vitae",
+      "isActive": true,
+      "description": "A landing page for a personal portfolio site, showcasing my skills, experiences, and projects.",
+      "highlights": [
+        "Built with Astro, a modern static site generator that delivers lightning-fast performance and optimized SEO.",
+        "Implemented smooth animations and interactive elements using GSAP (GreenSock Animation Platform) for an engaging user experience.",
+        "Designed a responsive layout with Tailwind CSS, ensuring the website looks great on all devices."
+      ],
+      "stack": {
+        "Astro": "simple-icons:astro",
+        "React": "simple-icons:react",
+        "TypeScript": "simple-icons:typescript",
+        "GSAP": "simple-icons:greensock",
+        "Tailwind": "mdi:tailwind",
+        "Daisy UI": "simple-icons:daisyui"
+      },
+      "url": "https://seanvizm.github.io/astro-mycv/",
+      "github": "https://github.com/seanvizm/astro-mycv"
+    },
+    {
+      "langIcon": "simple-icons:react",
+      "name": "NextJS E-Commerce Store",
+      "isActive": true,
+      "description": "A simplified e-commerce web application with “https://dummyjson.com” API integration and was written in Next.js 16, React 19, Typescript, Tailwind CSS v4, Bun Package Manager and Radix UI with shadcn/ui pre-styled components.",
+      "highlights": [
+        "Home Page - Random featured products section from different categories",
+        "Product Listing Page - Browse all products with search, filter, sort and pagination",
+        "Product Detail Page - View individual product details with image carousel"
+      ],
+      "stack": {
+        "NextJS": "simple-icons:react",
+        "React": "mdi:react",
+        "TypeScript": "simple-icons:typescript",
+        "Tailwind": "mdi:tailwind",
+        "shadcn/ui": "simple-icons:radixui",
+        "Bun": "simple-icons:bun"
+      },
+      "url": "https://nextjs-ecom-ypj9.vercel.app/",
+      "github": "https://github.com/seanvizm/nextjs-ecom/"
+    },
+    {
+      "langIcon": "simple-icons:react",
+      "name": "CRM MVP Demo",
+      "isActive": true,
+      "description": "This is a simple minimum viable product for a Customer Relationship Management to demonstrate how Inertia.js works with Laravel 11, ReactJS 19, Tailwind Css and PostgreSQL",
+      "highlights": [
+        "Using Docker / Docker Compose development tools for containerization",
+        "With interactive Swagger API documentation",
+        "Future plans include transition of this tech stacks into full Data Management System"
+      ],
+      "stack": {
+        "PHP": "simple-icons:php",
+        "Laravel": "simple-icons:laravel",
+        "InertiaJS": "simple-icons:inertia",
+        "React": "mdi:react",
+        "TypeScript": "simple-icons:typescript",
+        "Tailwind": "mdi:tailwind",
+        "Vite": "simple-icons:vite",
+        "Docker": "mdi:docker",
+        "Nginx": "simple-icons:nginx",
+        "PostgreSQL": "simple-icons:postgresql",
+        "Swagger": "simple-icons:swagger"
+      },
+      "url": "",
+      "github": "https://github.com/seanvizm/syecore/"
+    },
+    {
       "langIcon": "simple-icons:rust",
       "name": "Rust Distributed Workflow Orchestration",
       "isActive": true,
@@ -739,32 +812,6 @@
     },
     {
       "langIcon": "simple-icons:rust",
-      "name": "Rust Data Management System",
-      "isActive": true,
-      "description": "The key concept here is to use a Low-Code/Configuration-First approach, instead of hand-coding every admin page, you define the data structure and business logic, and the system auto-generates the necessary user interface (UI) to manage it.",
-      "highlights": [
-        "Data Schema Definition: User, Product) using simple configuration files (e.g., JSON, YAML).",
-        "Dynamic UI Generation: The Rust backend reads the data schema and dynamically renders the appropriate front-end components.",
-        "Relationship Handling: Specifies foreign key relationships (e.g., a Product belongs to a Category).",
-        "Custom Actions: Defines complex business logic actions that can be triggered directly from the admin UI (e.g., Process Payment).",
-        "Dashboard: Display of Key Performance Indicators (KPIs), real-time system status checks (Rust service health), and recent critical activity logs.",
-        "List View: Dynamic, auto-generated tables with support for server-side searching, filtering, sorting, and pagination.",
-        "Detail/Edit View: Dynamic forms, populated with data based on the schema, allowing for granular viewing and updating of single records.",
-        "User & Role Management: Standardized pages for creating and managing admin accounts and implementing Role-Based Access Control (RBAC) to govern what CRUD operations a user can perform on specific resources."
-      ],
-      "stack": {
-        "Rust": "simple-icons:rust",
-        "Leptos": "simple-icons:leptos",
-        "Astro": "simple-icons:astro",
-        "Docker": "mdi:docker",
-        "Tailwind": "mdi:tailwind",
-        "WebAssembly": "simple-icons:webassembly"
-      },
-      "url": "",
-      "github": "https://github.com/seanvizm/rust-admin"
-    },
-    {
-      "langIcon": "simple-icons:rust",
       "name": "Rust Cassandra Graph API",
       "isActive": true,
       "description": "A high-performance graph database API built with Rust, Axum, and Apache Cassandra. This project provides a RESTful API for managing graph data with nodes and edges, complete with interactive Swagger documentation.",
@@ -788,25 +835,30 @@
       "github": "https://github.com/seanvizm/rust-graph"
     },
     {
-      "langIcon": "simple-icons:astro",
-      "name": "My Curriculum Vitae",
+      "langIcon": "simple-icons:rust",
+      "name": "Data Management System",
       "isActive": true,
-      "description": "A landing page for a personal portfolio site, showcasing my skills, experiences, and projects.",
+      "description": "The key concept here is to use a Low-Code/Configuration-First approach, instead of hand-coding every admin page, you define the data structure and business logic, and the system auto-generates the necessary user interface (UI) to manage it.",
       "highlights": [
-        "Built with Astro, a modern static site generator that delivers lightning-fast performance and optimized SEO.",
-        "Implemented smooth animations and interactive elements using GSAP (GreenSock Animation Platform) for an engaging user experience.",
-        "Designed a responsive layout with Tailwind CSS, ensuring the website looks great on all devices."
+        "Data Schema Definition: (e.g., User, Product) using simple configuration files (e.g., JSON, YAML).",
+        "Dynamic UI Generation: The Rust backend reads the data schema and dynamically renders the appropriate front-end components.",
+        "Relationship Handling: Specifies foreign key relationships (e.g., a Product belongs to a Category).",
+        "Custom Actions: Defines complex business logic actions that can be triggered directly from the admin UI (e.g., Process Payment).",
+        "Dashboard: Display of Key Performance Indicators (KPIs), real-time system status checks (Rust service health), and recent critical activity logs.",
+        "List View: Dynamic, auto-generated tables with support for server-side searching, filtering, sorting, and pagination.",
+        "Detail/Edit View: Dynamic forms, populated with data based on the schema, allowing for granular viewing and updating of single records.",
+        "User & Role Management: Standardized pages for creating and managing admin accounts and implementing Role-Based Access Control (RBAC) to govern what CRUD operations a user can perform on specific resources."
       ],
       "stack": {
+        "Rust": "simple-icons:rust",
+        "Leptos": "simple-icons:leptos",
         "Astro": "simple-icons:astro",
-        "React": "simple-icons:react",
-        "TypeScript": "simple-icons:typescript",
-        "GSAP": "simple-icons:greensock",
+        "Docker": "mdi:docker",
         "Tailwind": "mdi:tailwind",
-        "Daisy UI": "simple-icons:daisyui"
+        "WebAssembly": "simple-icons:webassembly"
       },
-      "url": "https://seanvizm.github.io/astro-mycv/",
-      "github": "https://github.com/seanvizm/astro-mycv"
+      "url": "",
+      "github": "https://github.com/seanvizm/rust-admin"
     }
 
   ]
