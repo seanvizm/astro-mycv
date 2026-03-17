@@ -19,7 +19,7 @@
       "country": "Philippines"
     },
     "phone": "",
-    "last_updated": "December 9, 2025",
+    "last_updated": "March 17, 2026",
     "profiles": [
       {
         "network": "GitHub",
@@ -57,7 +57,7 @@
       "summary": "",
       "responsibilities": [
         {
-          "title": "Low-code Data Management System",
+          "title": "Data Management Automation System",
           "details": "This is significantly a self-made low-code/configuration-first generic tool that define data models. Instead of requiring developers to hand-code every administrative page, the system will dynamically generate the necessary data tables, forms and pages based on admin configuration, with built-in user roles & rights, and packed with API automation & documentation which can really demonstrates the ability to build flexible and scalable solutions that reduce development time and effort. "
         },
         {
@@ -346,25 +346,25 @@
           "icon": "mdi:microsoftazure",
           "title": "Microsoft Azure AI Essentials Professional Certificate",
           "url": "https://www.linkedin.com/learning/certificates/91f0050d0b8bb0dcf037f0aa55333cafcb2a6ec788e4d284118c5e90dabdc591",
-          "imageSrc": "https://media.licdn.com/dms/image/v2/D4E22AQFUpHVzlZNq4Q/feedshare-shrink_1280/B4EZn4aat9GoAs-/0/1760809299077?e=2147483647&v=beta&t=pUJvOYlSmaHCA8254exDY8DuIcvUZ-M9295mssClqGU"
+          "imageSrc": "https://seanvizm.github.io/astro-mycv/certificates/azure_ai.png"
         },
         {
           "icon": "mdi:lambdatest",
-          "title": "LambdaTest Test Automation Professional Certificate",
+          "title": "TestMu AI Test Automation Professional Certificate",
           "url": "https://www.linkedin.com/learning/certificates/258e88930a0e6c6a3b78182247cd7146f7c3e61e1c2ce3efb4510a01576093d6",
-          "imageSrc": "https://media.licdn.com/dms/image/v2/D4E22AQEizQocrnwwyw/feedshare-shrink_1280/B4EZnetFFBIIAs-/0/1760377983643?e=2147483647&v=beta&t=Z0Y6LjaALQr89FkbKVzLLE58jg7ZRuzlSTkkZHAYzRo"
+          "imageSrc": "https://seanvizm.github.io/astro-mycv/certificates/testmu_ai.png"
         },
         {
           "icon": "mdi:github",
           "title": "Career Essentials in Github Professional Certificate",
           "url": "https://www.linkedin.com/learning/certificates/8d346614aa55164a1b9774e5c818dea24d58ce15610ba809579177e295d0ba11",
-          "imageSrc": "https://media.licdn.com/dms/image/v2/D4E22AQE3sClr6Sf3sA/feedshare-shrink_1280/B4EZh2Qs.VGUAo-/0/1754330747216?e=1769644800&v=beta&t=U3E9o1viekKpRYvfkwsjc0nbYq2F4ZZi_cI8ww0ZN3k"
+          "imageSrc": "https://seanvizm.github.io/astro-mycv/certificates/github.png"
         },
         {
           "icon": "mdi:docker",
           "title": "Docker Foundations Professional Certificate",
           "url": "https://www.linkedin.com/learning/certificates/10c5fe79d57fa14ae0d26c940a02bd36f1427cd56643480bc6c32a8554fca522",
-          "imageSrc": "https://media.licdn.com/dms/image/v2/D4E22AQE6gMgiYEulVg/feedshare-shrink_1280/B4EZguBhfAGcAk-/0/1753118808294?e=1769644800&v=beta&t=8yCBYsCwTTVFyRHiB5mik0KTliQ7K87r1lEvR4phM9k"
+          "imageSrc": "https://seanvizm.github.io/astro-mycv/certificates/docker.png"
         }
       ]
     },{
@@ -687,10 +687,40 @@
   ],
   "projects": [
     {
+      "langIcon": "simple-icons:react",
+      "name": "CRM / ADM / ML Workflow",
+      "isActive": true,
+      "description": "This is an Application Data Management product for a Customer Relationship Management. This helps organizations make better use of their data, designing custom data structure or schema, improving their ability to make informed decisions and take action based on insights gleaned from the entity types data.",
+      "highlights": [
+        "Dashboard Statistics: Live stat cards for CRM entities and all active post types with mini donut (status) and bar (category) charts also have date-range filter data scopes for different viewing.",
+        "Custom Entity Types: Create and configure custom content types (e.g. Products, Invoices, Transactions) via the Post Type Settings panel",
+        "Dynamic Field Definitions: Each post type defines its own custom fields (string, number, boolean, date, text, array, object) stored as JSON. Fields automatically render in the table columns and the add/edit form.",
+        "Using Docker / Docker Compose development tools for microservice containerization",
+        "With interactive GraphQL Playground and Swagger API documentation",
+        "Future development will also leverage \"Machine Learning & Workflow Automation\" for effective data management."
+      ],
+      "stack": {
+        "PHP": "simple-icons:php",
+        "Laravel": "simple-icons:laravel",
+        "InertiaJS": "simple-icons:inertia",
+        "React": "mdi:react",
+        "TypeScript": "simple-icons:typescript",
+        "Tailwind": "mdi:tailwind",
+        "Vite": "simple-icons:vite",
+        "Docker": "mdi:docker",
+        "Nginx": "simple-icons:nginx",
+        "PostgreSQL": "simple-icons:postgresql",
+        "GraphQL": "simple-icons:graphql",
+        "Swagger": "simple-icons:swagger"
+      },
+      "url": "",
+      "github": "https://github.com/seanvizm/syecore/"
+    },
+    {
       "langIcon": "simple-icons:astro",
       "name": "My Curriculum Vitae",
       "isActive": true,
-      "description": "A landing page for a personal portfolio site, showcasing my skills, experiences, and projects.",
+      "description": "A landing page (this site) for a personal portfolio site, showcasing my skills, experiences, and projects.",
       "highlights": [
         "Built with Astro, a modern static site generator that delivers lightning-fast performance and optimized SEO.",
         "Implemented smooth animations and interactive elements using GSAP (GreenSock Animation Platform) for an engaging user experience.",
@@ -729,30 +759,27 @@
       "github": "https://github.com/seanvizm/nextjs-ecom/"
     },
     {
-      "langIcon": "simple-icons:react",
-      "name": "CRM MVP Demo",
+      "langIcon": "simple-icons:laravel",
+      "name": "Online Pizza Ordering System",
       "isActive": true,
-      "description": "This is a simple minimum viable product for a Customer Relationship Management to demonstrate how Inertia.js works with Laravel 11, ReactJS 19, Tailwind Css and PostgreSQL",
+      "description": "A Laravel 12 application for PizzaPlanet's online pizza ordering platform, demonstrating software engineering principles, design patterns, and clean architecture.",
       "highlights": [
-        "Using Docker / Docker Compose development tools for containerization",
-        "With interactive Swagger API documentation",
-        "Future plans include transition of this tech stacks into full Data Management System"
+        "Multiple Preset Pizzas: Margherita, Romana, Americana, and Mexicana",
+        "Custom Pizza Builder: Create your own pizza with up to 4 toppings",
+        "Flexible Payment Options: Card and PayPal payment methods (mocked for demonstration)",
+        "Price Calculation Engine: Dynamic pricing based on pizza type and toppings",
+        "Shopping Cart: Full cart management with session persistence",
+        "Order Processing: Order creation and payment tracking with comprehensive logging"
       ],
       "stack": {
         "PHP": "simple-icons:php",
         "Laravel": "simple-icons:laravel",
-        "InertiaJS": "simple-icons:inertia",
-        "React": "mdi:react",
-        "TypeScript": "simple-icons:typescript",
-        "Tailwind": "mdi:tailwind",
-        "Vite": "simple-icons:vite",
-        "Docker": "mdi:docker",
-        "Nginx": "simple-icons:nginx",
-        "PostgreSQL": "simple-icons:postgresql",
-        "Swagger": "simple-icons:swagger"
+        "MySQL": "simple-icons:mysql",
+        "Jquery": "simple-icons:jquery",
+        "Vite": "simple-icons:vite"
       },
       "url": "",
-      "github": "https://github.com/seanvizm/syecore/"
+      "github": "https://github.com/seanvizm/planet-pizza"
     },
     {
       "langIcon": "simple-icons:rust",
@@ -833,32 +860,6 @@
       },
       "url": "",
       "github": "https://github.com/seanvizm/rust-graph"
-    },
-    {
-      "langIcon": "simple-icons:rust",
-      "name": "Data Management System",
-      "isActive": true,
-      "description": "The key concept here is to use a Low-Code/Configuration-First approach, instead of hand-coding every admin page, you define the data structure and business logic, and the system auto-generates the necessary user interface (UI) to manage it.",
-      "highlights": [
-        "Data Schema Definition: (e.g., User, Product) using simple configuration files (e.g., JSON, YAML).",
-        "Dynamic UI Generation: The Rust backend reads the data schema and dynamically renders the appropriate front-end components.",
-        "Relationship Handling: Specifies foreign key relationships (e.g., a Product belongs to a Category).",
-        "Custom Actions: Defines complex business logic actions that can be triggered directly from the admin UI (e.g., Process Payment).",
-        "Dashboard: Display of Key Performance Indicators (KPIs), real-time system status checks (Rust service health), and recent critical activity logs.",
-        "List View: Dynamic, auto-generated tables with support for server-side searching, filtering, sorting, and pagination.",
-        "Detail/Edit View: Dynamic forms, populated with data based on the schema, allowing for granular viewing and updating of single records.",
-        "User & Role Management: Standardized pages for creating and managing admin accounts and implementing Role-Based Access Control (RBAC) to govern what CRUD operations a user can perform on specific resources."
-      ],
-      "stack": {
-        "Rust": "simple-icons:rust",
-        "Leptos": "simple-icons:leptos",
-        "Astro": "simple-icons:astro",
-        "Docker": "mdi:docker",
-        "Tailwind": "mdi:tailwind",
-        "WebAssembly": "simple-icons:webassembly"
-      },
-      "url": "",
-      "github": "https://github.com/seanvizm/rust-admin"
     }
 
   ]
