@@ -11,7 +11,7 @@
     "email": "vizmara@gmail.com",
     "theme": "batman",
     "url": "https://seanvizm.github.io/astro-mycv/",
-    "summary": "Pushing business concept to code, innovate and keeping things simple. 🌀",
+    "summary": "Pushing business concept to code, solve the problem, innovate and keeping things simple. This is me. 🌀",
     "location": {
       "city": "",
       "region": "Calabarzon",
@@ -687,12 +687,12 @@
   ],
   "projects": [
     {
-      "langIcon": "simple-icons:react",
-      "name": "CRM / ADM / ML Workflow",
+      "langIcon": "simple-icons:laravel",
+      "name": "Application Data Management",
       "isActive": true,
       "description": "This is an Application Data Management product for a Customer Relationship Management. This helps organizations make better use of their data, designing custom data structure or schema, improving their ability to make informed decisions and take action based on insights gleaned from the entity types data.",
       "highlights": [
-        "Dashboard Statistics: Live stat cards for CRM entities and all active post types with mini donut (status) and bar (category) charts also have date-range filter data scopes for different viewing.",
+        "Dashboard Statistics: Live stat cards for CRM entities and all active post types with line, pie, bar (status) and bar (category) charts also have date-range filter data scopes for different viewing.",
         "Custom Entity Types: Create and configure custom content types (e.g. Products, Invoices, Transactions) via the Post Type Settings panel",
         "Dynamic Field Definitions: Each post type defines its own custom fields (string, number, boolean, date, text, array, object) stored as JSON. Fields automatically render in the table columns and the add/edit form.",
         "Using Docker / Docker Compose development tools for microservice containerization",
@@ -714,7 +714,19 @@
         "Swagger": "simple-icons:swagger"
       },
       "url": "",
-      "github": "https://github.com/seanvizm/syecore/"
+      "github": "https://github.com/seanvizm/syecore/",
+      "screenshots": [
+        { "file": "dashboard.png",      "label": "Dashboard / Live stat cards",     "path": "sshot/syecore" },
+        { "file": "customers.png",      "label": "Lead & Customers Management",     "path": "sshot/syecore" },
+        { "file": "email-template.png", "label": "Email Templates & Campaigns",     "path": "sshot/syecore" },
+        { "file": "settings.png",       "label": "General Settings",                "path": "sshot/syecore" },
+        { "file": "settings-post-type.png",   "label": "Post Type Setings",         "path": "sshot/syecore" },
+        { "file": "post-table-view.png",   "label": "Dynamic Data Table View",      "path": "sshot/syecore" },
+        { "file": "post-kanban-view.png",   "label": "Alternative Kanban View",     "path": "sshot/syecore" },
+        { "file": "users.png",   "label": "Users & Roles Management",               "path": "sshot/syecore" },
+        { "file": "audit-trail.png",   "label": "Comprehensive Activity Logs",      "path": "sshot/syecore" },
+        { "file": "graphql-playground.png",   "label": "GraphQL Playground",        "path": "sshot/syecore" }
+      ]
     },
     {
       "langIcon": "simple-icons:astro",

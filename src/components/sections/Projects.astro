@@ -6,10 +6,10 @@ import { projects } from "@mycvdata";
 ---
 
 <Section className={Astro.props.className} title="Personal Projects">
-  <div class="grid grid-cols-1 gap-3 md:grid-cols-2 print:flex print:flex-col">
+  <div class="grid grid-cols-1 gap-3 md:grid-cols-1 print:flex print:flex-col">
     {
       projects && projects.map(
-        ({ url, description, highlights, langIcon, name, isActive, github, stack }) => {
+        ({ url, description, highlights, langIcon, name, isActive, github, stack, screenshots }) => {
           return (
             <div
               data-expanded="false"
@@ -55,6 +55,91 @@ import { projects } from "@mycvdata";
                 )}
               </div>
 
+              {/* Screenshot carousel */}
+              {screenshots && screenshots.length > 0 && (
+                <div class="mt-3 mb-1" data-carousel>
+                  {/* Main image area */}
+                  <div class="relative rounded-md overflow-hidden aspect-video bg-black/10 group/car">
+                    {screenshots.map(({ file, label, path }: { file: string; label: string; path: string }, idx: number) => (
+                      <a
+                        href={`/${path}/${file}`}
+                        data-fancybox={`gallery-${name.replace(/[^a-z0-9]/gi, '-')}`}
+                        data-caption={label}
+                        data-index={String(idx)}
+                        class:list={[
+                          "carousel-slide absolute inset-0 transition-opacity duration-300 ease-in-out",
+                          idx === 0 ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none",
+                        ]}
+                      >
+                        <img
+                          src={`/${path}/${file}`}
+                          alt={label}
+                          class="w-full h-full object-cover"
+                          loading={idx === 0 ? "eager" : "lazy"}
+                        />
+                      </a>
+                    ))}
+
+                    {/* Caption overlay */}
+                    <div class="absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black/70 to-transparent px-3 pt-6 pb-2 pointer-events-none">
+                      <p class="text-white/90 text-xs truncate" data-carousel-caption>{screenshots[0].label}</p>
+                    </div>
+
+                    {/* Slide counter */}
+                    <span class="absolute top-2 right-2 z-20 bg-black/50 text-white/80 text-[10px] font-medium px-2 py-0.5 rounded-full pointer-events-none tabular-nums" data-carousel-counter>
+                      1 / {screenshots.length}
+                    </span>
+
+                    {/* Prev / Next arrows */}
+                    {screenshots.length > 1 && (
+                      <Fragment>
+                        <button
+                          type="button"
+                          class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-black/40 hover:bg-skin-hue text-white rounded-full p-1 opacity-100 sm:opacity-0 sm:group-hover/car:opacity-100 transition-all duration-200 backdrop-blur-sm"
+                          aria-label="Previous screenshot"
+                        >
+                          <Icon name="ri:arrow-left-s-line" class="w-5 h-5" />
+                        </button>
+                        <button
+                          type="button"
+                          class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-black/40 hover:bg-skin-hue text-white rounded-full p-1 opacity-100 sm:opacity-0 sm:group-hover/car:opacity-100 transition-all duration-200 backdrop-blur-sm"
+                          aria-label="Next screenshot"
+                        >
+                          <Icon name="ri:arrow-right-s-line" class="w-5 h-5" />
+                        </button>
+                      </Fragment>
+                    )}
+                  </div>
+
+                  {/* Thumbnail strip */}
+                  {screenshots.length > 1 && (
+                    <div
+                      class="flex gap-1.5 mt-1.5 overflow-x-auto pb-1 scrollbar-thin scrollbar-thumb-skin-hue scrollbar-track-transparent"
+                      data-carousel-thumbs
+                    >
+                      {screenshots.map(({ file, label, path }: { file: string; label: string; path: string }, idx: number) => (
+                        <button
+                          type="button"
+                          data-thumb-index={String(idx)}
+                          title={label}
+                          class:list={[
+                            "flex-shrink-0 w-16 h-11 rounded overflow-hidden ring-2 transition-all duration-200 cursor-pointer hover:opacity-100",
+                            idx === 0 ? "ring-skin-hue opacity-100" : "ring-transparent opacity-50 hover:ring-skin-hue",
+                          ]}
+                        >
+                          <img
+                            src={`/${path}/${file}`}
+                            alt={label}
+                            class="w-full h-full object-cover"
+                            loading="lazy"
+                          />
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              )}
+
               <div class="after:from-skin-hue dark:after:to-skin-hue/0 flex relative flex-col print:!h-auto print:gap-2 after:bg-gradient-to-t after:absolute after:bottom-0 after:w-full print:after:hidden after:h-12 after:content-[''] h-48 group-data-[expanded=true]:after:hidden group-data-[expanded=true]:h-auto overflow-hidden duration-200 ease-out">
                 <p data-ccursor="noPadding" class='relative z-10 py-3 text-sm text-skin-base'>
                   {description}
@@ -93,9 +178,9 @@ import { projects } from "@mycvdata";
 </Section>
 <script>
   import { Fancybox } from "@fancyapps/ui";
-  Fancybox.bind('[data-fancybox="projects"]', { hideScrollbar: false });
+  Fancybox.bind('[data-fancybox]', { hideScrollbar: false });
 
-  // show nore/less
+  // show more/less
   const expandButton = document.querySelectorAll('.expand-button-projects');
   expandButton.forEach(button => {
     button.addEventListener('click', () => {
@@ -104,6 +189,44 @@ import { projects } from "@mycvdata";
       const expandText = button.querySelector('.expand-text-projects')!;
       expandText.innerHTML = container.dataset.expanded === 'true' ? 'Show less' : 'Show more'
     });
+  });
+
+  // Screenshot carousels
+  document.querySelectorAll<HTMLElement>('[data-carousel]').forEach(carousel => {
+    const slides = carousel.querySelectorAll<HTMLElement>('.carousel-slide');
+    const thumbButtons = carousel.querySelectorAll<HTMLElement>('[data-thumb-index]');
+    const captionEl = carousel.querySelector<HTMLElement>('[data-carousel-caption]');
+    const counterEl = carousel.querySelector<HTMLElement>('[data-carousel-counter]');
+    const prevBtn = carousel.querySelector<HTMLButtonElement>('.carousel-prev');
+    const nextBtn = carousel.querySelector<HTMLButtonElement>('.carousel-next');
+
+    let current = 0;
+    const total = slides.length;
+
+    function goTo(index: number) {
+      const prev = current;
+      current = ((index % total) + total) % total;
+      if (prev === current) return;
+
+      slides[prev].classList.remove('opacity-100', 'z-10');
+      slides[prev].classList.add('opacity-0', 'z-0', 'pointer-events-none');
+      slides[current].classList.remove('opacity-0', 'z-0', 'pointer-events-none');
+      slides[current].classList.add('opacity-100', 'z-10');
+
+      thumbButtons[prev]?.classList.remove('ring-skin-hue', 'opacity-100');
+      thumbButtons[prev]?.classList.add('ring-transparent', 'opacity-50');
+      thumbButtons[current]?.classList.remove('ring-transparent', 'opacity-50');
+      thumbButtons[current]?.classList.add('ring-skin-hue', 'opacity-100');
+
+      if (captionEl) captionEl.textContent = slides[current].dataset.caption ?? '';
+      if (counterEl) counterEl.textContent = `${current + 1} / ${total}`;
+
+      thumbButtons[current]?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    }
+
+    prevBtn?.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); goTo(current - 1); });
+    nextBtn?.addEventListener('click', e => { e.preventDefault(); e.stopPropagation(); goTo(current + 1); });
+    thumbButtons.forEach((thumb, i) => thumb.addEventListener('click', () => goTo(i)));
   });
 </script>
 
