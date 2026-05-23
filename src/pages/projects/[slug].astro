@@ -1,0 +1,320 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+import ThemeSwitch from "@/components/ThemeSwitch.astro";
+import { projects, basics } from "@mycvdata";
+
+type Screenshot = { file: string; label: string; path: string };
+type StackEntry = [string, string];
+
+function slugify(name: string): string {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
+export function getStaticPaths() {
+  const slugify = (name: string): string =>
+    name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
+  return (projects ?? []).map((project: any) => ({
+    params: { slug: slugify(project.name) },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props as { project: any };
+const {
+  name,
+  description,
+  highlights = [],
+  langIcon,
+  isActive,
+  url: projectUrl,
+  github,
+  stack = {},
+  screenshots = [],
+} = project;
+
+const galleryId = `gallery-${name.replace(/[^a-z0-9]/gi, "-")}`;
+const backUrl = import.meta.env.BASE_URL;
+const firstScreenshot: Screenshot | undefined = screenshots[0];
+---
+
+<Layout
+  title={`${name} — ${basics.name}`}
+  description={description}
+  canonicalURL={`${basics.url}projects/${slugify(name)}`}
+  image={firstScreenshot ? `${basics.url}${firstScreenshot.path}/${firstScreenshot.file}` : undefined}
+>
+  <div class="min-h-screen text-skin-base">
+
+    <!-- Sticky top nav -->
+    <header class="sticky top-0 z-50 border-b border-skin-muted/20 bg-skin-fill/80 backdrop-blur-md print:hidden">
+      <div class="mx-auto flex max-w-5xl items-center justify-between px-5 py-3">
+        <a
+          href={backUrl}
+          class="group flex items-center gap-2 text-sm text-skin-muted hover:text-skin-hue transition-colors"
+        >
+          <Icon name="ri:arrow-left-line" class="w-4 h-4 group-hover:-translate-x-0.5 transition-transform duration-150" />
+          Back to CV
+        </a>
+
+        <div class="flex items-center gap-3">
+          <ThemeSwitch />
+          {github && (
+            <a
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="View on GitHub"
+              class="flex items-center gap-1.5 text-sm text-skin-muted hover:text-skin-base transition-colors"
+            >
+              <Icon name="mdi:github" class="w-5 h-5" />
+              <span class="hidden sm:inline">GitHub</span>
+            </a>
+          )}
+          {isActive && projectUrl && (
+            <a
+              href={projectUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center gap-1.5 rounded-md bg-skin-button-accent px-3 py-1.5 text-sm text-skin-inverted hover:bg-skin-button-accent-hover transition-colors"
+            >
+              <Icon name="ri:arrow-up-line" class="w-4 h-4 rotate-45" />
+              Visit Site
+            </a>
+          )}
+        </div>
+      </div>
+    </header>
+
+    <div class="mx-auto max-w-5xl space-y-10 px-5 py-10">
+
+      <!-- Project title row -->
+      <div class="flex items-start gap-4">
+        <span class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-skin-button-muted ring-1 ring-skin-muted">
+          <Icon name={langIcon ?? "mdi:code"} class="h-6 w-6 text-skin-hue" />
+        </span>
+        <div>
+          <h1 class="text-2xl font-bold text-skin-base">{name}</h1>
+          <div class="mt-1 flex flex-wrap items-center gap-3">
+            {isActive ? (
+              <span class="flex items-center gap-1 text-xs font-medium text-emerald-500">
+                <span class="inline-block h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+                Active
+              </span>
+            ) : (
+              <span class="flex items-center gap-1 text-xs font-medium text-skin-muted">
+                <span class="inline-block h-1.5 w-1.5 rounded-full bg-skin-muted"></span>
+                Inactive
+              </span>
+            )}
+            {github && (
+              <a href={github} target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 text-xs text-skin-muted hover:text-skin-hue transition-colors print:hidden">
+                <Icon name="mdi:github" class="h-3.5 w-3.5" />
+                {github.replace(/^https?:\/\/(www\.)?github\.com\//, '')}
+              </a>
+            )}
+            {isActive && projectUrl && (
+              <a href={projectUrl} target="_blank" rel="noopener noreferrer" class="flex items-center gap-1 text-xs text-skin-hue hover:underline transition-colors print:hidden">
+                <Icon name="ri:external-link-line" class="h-3.5 w-3.5" />
+                {projectUrl.replace(/^https?:\/\//, '').replace(/\/$/, '')}
+              </a>
+            )}
+          </div>
+        </div>
+      </div>
+
+      <!-- Screenshot carousel -->
+      {screenshots.length > 0 && (
+        <div data-carousel>
+          <!-- Main image -->
+          <div class="relative aspect-video overflow-hidden rounded-xl bg-black/10 group/car mb-2">
+            {screenshots.map(({ file, label, path }: Screenshot, idx: number) => (
+              <a
+                href={`${basics.url}${path}/${file}`}
+                data-fancybox={galleryId}
+                data-caption={label}
+                data-index={String(idx)}
+                class:list={[
+                  "carousel-slide absolute inset-0 transition-opacity duration-300 ease-in-out",
+                  idx === 0 ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none",
+                ]}
+              >
+                <img
+                  src={`${basics.url}${path}/${file}`}
+                  alt={label}
+                  class="h-full w-full object-contain"
+                  loading={idx === 0 ? "eager" : "lazy"}
+                />
+              </a>
+            ))}
+
+            <!-- Hover hint -->
+            <div class="pointer-events-none absolute inset-0 z-20 flex items-center justify-center opacity-0 transition-opacity duration-200 group-hover/car:opacity-100">
+              <span class="flex items-center gap-1.5 rounded-full bg-black/60 px-3 py-1.5 text-xs font-medium text-white/90 backdrop-blur-sm">
+                <Icon name="ri:fullscreen-line" class="h-3.5 w-3.5" />
+                Click to see the full view
+              </span>
+            </div>
+
+            <!-- Caption -->
+            <div class="pointer-events-none absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black/70 to-transparent px-4 pb-3 pt-10">
+              <p class="truncate text-sm text-white/90" data-carousel-caption>{screenshots[0].label}</p>
+            </div>
+
+            <!-- Counter -->
+            <span class="pointer-events-none absolute right-3 top-3 z-20 rounded-full bg-black/50 px-2.5 py-1 text-xs font-medium tabular-nums text-white/80" data-carousel-counter>
+              1 / {screenshots.length}
+            </span>
+
+            <!-- Arrows -->
+            {screenshots.length > 1 && (
+              <Fragment>
+                <button
+                  type="button"
+                  aria-label="Previous screenshot"
+                  class="carousel-prev absolute left-3 top-1/2 z-20 -translate-y-1/2 rounded-full bg-black/40 p-2 text-white opacity-100 backdrop-blur-sm transition-all duration-200 hover:bg-skin-hue sm:opacity-0 sm:group-hover/car:opacity-100"
+                >
+                  <Icon name="ri:arrow-left-s-line" class="h-6 w-6" />
+                </button>
+                <button
+                  type="button"
+                  aria-label="Next screenshot"
+                  class="carousel-next absolute right-3 top-1/2 z-20 -translate-y-1/2 rounded-full bg-black/40 p-2 text-white opacity-100 backdrop-blur-sm transition-all duration-200 hover:bg-skin-hue sm:opacity-0 sm:group-hover/car:opacity-100"
+                >
+                  <Icon name="ri:arrow-right-s-line" class="h-6 w-6" />
+                </button>
+              </Fragment>
+            )}
+          </div>
+
+          <!-- Thumbnails -->
+          {screenshots.length > 1 && (
+            <div
+              class="flex gap-2 overflow-x-auto pb-1 scrollbar-thin scrollbar-thumb-skin-hue scrollbar-track-transparent"
+              data-carousel-thumbs
+            >
+              {screenshots.map(({ file, label, path }: Screenshot, idx: number) => (
+                <button
+                  type="button"
+                  data-thumb-index={String(idx)}
+                  title={label}
+                  class:list={[
+                    "h-14 w-20 flex-shrink-0 cursor-pointer overflow-hidden rounded-md ring-2 transition-all duration-200 hover:opacity-100",
+                    idx === 0 ? "opacity-100 ring-skin-hue" : "opacity-50 ring-transparent hover:ring-skin-hue",
+                  ]}
+                >
+                  <img
+                    src={`${basics.url}${path}/${file}`}
+                    alt={label}
+                    class="h-full w-full object-contain"
+                    loading="lazy"
+                  />
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+
+      <!-- About / Description -->
+      <section class="space-y-3">
+        <h2 class="border-b border-skin-muted/20 pb-2 text-lg font-semibold text-skin-base">About</h2>
+        <p class="leading-relaxed text-skin-base">{description}</p>
+      </section>
+
+      <!-- Features & Highlights -->
+      {highlights.length > 0 && (
+        <section class="space-y-3">
+          <h2 class="border-b border-skin-muted/20 pb-2 text-lg font-semibold text-skin-base">Features & Highlights</h2>
+          <ul class="space-y-2.5">
+            {highlights.map((h: string) => (
+              <li class="flex gap-3 text-skin-base">
+                <span class="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-skin-hue"></span>
+                <span class="leading-relaxed">{h}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <!-- Tech Stack -->
+      {Object.keys(stack).length > 0 && (
+        <section class="space-y-3">
+          <h2 class="border-b border-skin-muted/20 pb-2 text-lg font-semibold text-skin-base">Tech Stack</h2>
+          <ul class="flex flex-wrap gap-2">
+            {(Object.entries(stack) as StackEntry[]).map(([label, icon]) => (
+              <li class="flex items-center gap-1.5 rounded-md border border-skin-hue/60 px-3 py-1 text-sm text-skin-hue backdrop-blur-sm">
+                {icon && <Icon name={icon} class="h-4 w-4" />}
+                {label}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <!-- Footer actions -->
+      <div class="flex flex-wrap items-center gap-4 border-t border-skin-muted/20 pt-6 print:hidden">
+        <a href={backUrl} class="group flex items-center gap-2 text-sm text-skin-muted hover:text-skin-hue transition-colors">
+          <Icon name="ri:arrow-left-line" class="h-4 w-4 group-hover:-translate-x-0.5 transition-transform duration-150" />
+          Back to CV
+        </a>
+        {github && (
+          <a href={github} target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-sm text-skin-muted hover:text-skin-hue transition-colors">
+            <Icon name="mdi:github" class="h-4 w-4" />
+            View on GitHub
+          </a>
+        )}
+        {isActive && projectUrl && (
+          <a href={projectUrl} target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-sm text-skin-hue hover:underline transition-colors">
+            <Icon name="ri:external-link-line" class="h-4 w-4" />
+            Visit Live Site
+          </a>
+        )}
+      </div>
+
+    </div>
+  </div>
+</Layout>
+
+<script>
+  import { Fancybox } from "@fancyapps/ui";
+  Fancybox.bind("[data-fancybox]", { hideScrollbar: false });
+
+  const carousel = document.querySelector<HTMLElement>("[data-carousel]");
+  if (carousel) {
+    const slides = carousel.querySelectorAll<HTMLElement>(".carousel-slide");
+    const thumbButtons = carousel.querySelectorAll<HTMLElement>("[data-thumb-index]");
+    const captionEl = carousel.querySelector<HTMLElement>("[data-carousel-caption]");
+    const counterEl = carousel.querySelector<HTMLElement>("[data-carousel-counter]");
+    const prevBtn = carousel.querySelector<HTMLButtonElement>(".carousel-prev");
+    const nextBtn = carousel.querySelector<HTMLButtonElement>(".carousel-next");
+
+    let current = 0;
+    const total = slides.length;
+
+    function goTo(index: number) {
+      const prev = current;
+      current = ((index % total) + total) % total;
+      if (prev === current) return;
+
+      slides[prev].classList.remove("opacity-100", "z-10");
+      slides[prev].classList.add("opacity-0", "z-0", "pointer-events-none");
+      slides[current].classList.remove("opacity-0", "z-0", "pointer-events-none");
+      slides[current].classList.add("opacity-100", "z-10");
+
+      thumbButtons[prev]?.classList.remove("ring-skin-hue", "opacity-100");
+      thumbButtons[prev]?.classList.add("ring-transparent", "opacity-50");
+      thumbButtons[current]?.classList.remove("ring-transparent", "opacity-50");
+      thumbButtons[current]?.classList.add("ring-skin-hue", "opacity-100");
+
+      if (captionEl) captionEl.textContent = slides[current].dataset.caption ?? "";
+      if (counterEl) counterEl.textContent = `${current + 1} / ${total}`;
+      thumbButtons[current]?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+    }
+
+    prevBtn?.addEventListener("click", (e) => { e.preventDefault(); e.stopPropagation(); goTo(current - 1); });
+    nextBtn?.addEventListener("click", (e) => { e.preventDefault(); e.stopPropagation(); goTo(current + 1); });
+    thumbButtons.forEach((thumb, i) => thumb.addEventListener("click", () => goTo(i)));
+  }
+</script>
