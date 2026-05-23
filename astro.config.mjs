@@ -4,7 +4,7 @@ import tailwind from "@astrojs/tailwind";
 import astroIcon from 'astro-icon';
 import mdx from '@astrojs/mdx';
 import playformCompress from "@playform/compress";
-import vercel from "@astrojs/vercel/serverless";
+import vercel from "@astrojs/vercel";
 
 // https://astro.build/config
 export default defineConfig({
