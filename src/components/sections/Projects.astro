@@ -2,7 +2,7 @@
 import Section from "../Section.astro";
 import { Icon } from "astro-icon/components";
 
-import { projects } from "@mycvdata";
+import {basics, projects } from "@mycvdata";
 ---
 
 <Section className={Astro.props.className} title="Personal Projects">
@@ -62,7 +62,7 @@ import { projects } from "@mycvdata";
                   <div class="relative rounded-md overflow-hidden aspect-video bg-black/10 group/car mb-2">
                     {screenshots.map(({ file, label, path }: { file: string; label: string; path: string }, idx: number) => (
                       <a
-                        href={`/${path}/${file}`}
+                        href={`${basics.url}${path}/${file}`}
                         data-fancybox={`gallery-${name.replace(/[^a-z0-9]/gi, '-')}`}
                         data-caption={label}
                         data-index={String(idx)}
@@ -72,7 +72,7 @@ import { projects } from "@mycvdata";
                         ]}
                       >
                         <img
-                          src={`/${path}/${file}`}
+                          src={`${basics.url}${path}/${file}`}
                           alt={label}
                           class="w-full h-full object-contain"
                           loading={idx === 0 ? "eager" : "lazy"}

@@ -688,7 +688,7 @@
   "projects": [
     {
       "langIcon": "simple-icons:laravel",
-      "name": "Application Data Management",
+      "name": "CRM with Application Data Management",
       "isActive": true,
       "description": "This is an Application Data Management product for a Customer Relationship Management. This helps organizations make better use of their data, designing custom data structure or schema, improving their ability to make informed decisions and take action based on insights gleaned from the entity types data.",
       "highlights": [
@@ -836,7 +836,18 @@
         "Vite": "simple-icons:vite"
       },
       "url": "",
-      "github": "https://github.com/seanvizm/planet-pizza"
+      "github": "https://github.com/seanvizm/planet-pizza",
+      "screenshots": [
+        { "file": "home-1.png",       "label": "",   "path": "sshot/pizzaorder" },
+        { "file": "home-2.png",       "label": "",   "path": "sshot/pizzaorder" },
+        { "file": "home-3.png",       "label": "",   "path": "sshot/pizzaorder" },
+        { "file": "home-4.png",       "label": "",   "path": "sshot/pizzaorder" },
+        { "file": "our-menu-1.png",   "label": "",   "path": "sshot/pizzaorder" },
+        { "file": "our-menu-2.png",   "label": "",   "path": "sshot/pizzaorder" },
+        { "file": "custom-order.png", "label": "",   "path": "sshot/pizzaorder" },
+        { "file": "checkout.png",     "label": "",   "path": "sshot/pizzaorder" },
+        { "file": "about.png",        "label": "",   "path": "sshot/pizzaorder" }
+      ]
     },
     {
       "langIcon": "simple-icons:rust",
