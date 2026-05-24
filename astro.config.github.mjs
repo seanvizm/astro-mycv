@@ -8,7 +8,7 @@ import playformCompress from "@playform/compress";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://seanvizm.github.io',
-  base: '/astro-mycv',
+  base: '/',
   vite: {
     server: {
       allowedHosts: ['piosbox.tplinkdns.com','piosbox.local','mbp-m2.local', 'localhost', '127.0.0.1'], // Add your allowed hosts here

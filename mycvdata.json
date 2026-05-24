@@ -10,7 +10,7 @@
     "image_bg": "/Concept2Code.png",
     "email": "vizmara@gmail.com",
     "theme": "batman",
-    "url": "https://seanvizm.github.io/astro-mycv",
+    "url": "https://seanvizm.github.io",
     "summary": "Pushing business concept to code, solve the problem, innovate and keeping things simple. This is me. 🌀",
     "location": {
       "city": "",
@@ -40,7 +40,7 @@
         "icon": "mdi:web",
         "color": "#929AAB",
         "username": "www",
-        "url": "https://seanvizm.github.io/astro-mycv"
+        "url": "https://seanvizm.github.io"
       }
     ]
   },
@@ -785,8 +785,8 @@
         "Tailwind": "mdi:tailwind",
         "Daisy UI": "simple-icons:daisyui"
       },
-      "url": "https://seanvizm.github.io/astro-mycv",
-      "github": "https://github.com/seanvizm/astro-mycv"
+      "url": "https://seanvizm.github.io",
+      "github": "https://github.com/seanvizm/seanvizm.github.io"
     },
     {
       "langIcon": "simple-icons:react",

@@ -14,17 +14,17 @@ This guide will help you deploy your Astro CV site to GitHub Pages.
 The `astro.config.github.mjs` file has been created with the following important changes:
 
 - **`site`**: Set to `https://seanvizm.github.io` (your GitHub Pages URL)
-- **`base`**: Set to `/astro-mycv` (your repository name)
+- **`base`**: Set to `/` (your repository name)
 - **`output`**: Changed to `static` (required for GitHub Pages)
 - **Removed**: Vercel adapter (not needed for static sites)
 
 > ⚠️ **Important**: Update the `site` and `base` values in `astro.config.github.mjs` if:
 > - Your GitHub username is different from `seanvizm`
-> - Your repository name is different from `astro-mycv`
+> - Your repository name is different from `seanvizm.github.io`
 
 ### 2. Enable GitHub Pages
 
-1. Go to your GitHub repository: `https://github.com/seanvizm/astro-mycv`
+1. Go to your GitHub repository: `https://github.com/seanvizm/seanvizm.github.io`
 2. Click on **Settings** (top menu)
 3. Scroll down and click on **Pages** (left sidebar)
 4. Under **Source**, select **GitHub Actions**
@@ -56,7 +56,7 @@ git push origin main
 
 Once deployed, your site will be available at:
 ```
-https://seanvizm.github.io/astro-mycv/
+https://seanvizm.github.io/
 ```
 
 > 🎉 **Note**: The first deployment might take a few minutes. Subsequent deployments are usually faster.
@@ -88,7 +88,7 @@ pnpm run build:github
 pnpm run preview
 ```
 
-> **Note**: When previewing locally, some assets might not load correctly due to the `/astro-mycv` base path. This is normal and will work correctly when deployed to GitHub Pages.
+> **Note**: When previewing locally, some assets might not load correctly due to the `/` base path. This is normal and will work correctly when deployed to GitHub Pages.
 
 ## Troubleshooting
 

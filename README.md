@@ -29,7 +29,7 @@ To get a local copy up and running, follow these simple steps.
 
 1.  Clone the repo
     ```sh
-    git clone https://github.com/seanvizm/astro-mycv
+    git clone https://github.com/seanvizm/seanvizm.github.io
     ```
 2.  Install PNPM via npm
     ```sh
