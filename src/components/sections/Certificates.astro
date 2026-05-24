@@ -4,6 +4,7 @@ import { basics, certificates } from '@mycvdata'
 import { Icon } from 'astro-icon/components'
 import { Image } from 'astro:assets'
 
+const base_url = import.meta.env.BASE_URL;
 ---
 
 <Section className={Astro.props.className} title="Certificates">
@@ -38,7 +39,7 @@ import { Image } from 'astro:assets'
                                   class='scale-100 w-64'
                                   height={376}
                                   width={408}}
-                                  src={basics.url + imageSrc}
+                                  src={base_url + imageSrc}
                                   alt={title}
                                   loading='lazy' />)}
                               </figure>

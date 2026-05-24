@@ -2,7 +2,7 @@
 import Layout from "@layouts/Layout.astro";
 import { Icon } from "astro-icon/components";
 import ThemeSwitch from "@/components/ThemeSwitch.astro";
-import { projects, basics } from "@mycvdata";
+import {basics, projects } from "@mycvdata";
 
 type Screenshot = { file: string; label: string; path: string };
 type StackEntry = [string, string];
@@ -35,15 +35,15 @@ const {
 } = project;
 
 const galleryId = `gallery-${name.replace(/[^a-z0-9]/gi, "-")}`;
-const backUrl = basics.url; //import.meta.env.BASE_URL;
+const base_url = import.meta.env.BASE_URL;
 const firstScreenshot: Screenshot | undefined = screenshots[0];
 ---
 
 <Layout
   title={`${name} — ${basics.name}`}
   description={description}
-  canonicalURL={`${basics.url}projects/${slugify(name)}`}
-  image={firstScreenshot ? `${basics.url}${firstScreenshot.path}/${firstScreenshot.file}` : undefined}
+  canonicalURL={`${base_url}projects/${slugify(name)}`}
+  image={firstScreenshot ? `${base_url}${firstScreenshot.path}/${firstScreenshot.file}` : undefined}
 >
   <div class="min-h-screen text-skin-base">
 
@@ -51,7 +51,7 @@ const firstScreenshot: Screenshot | undefined = screenshots[0];
     <header class="sticky top-0 z-50 border-b border-skin-muted/20 bg-skin-fill/80 backdrop-blur-md print:hidden">
       <div class="mx-auto flex max-w-5xl items-center justify-between px-5 py-3">
         <a
-          href={backUrl}
+          href={base_url}
           class="group flex items-center gap-2 text-sm text-skin-muted hover:text-skin-hue transition-colors"
         >
           <Icon name="ri:arrow-left-line" class="w-4 h-4 group-hover:-translate-x-0.5 transition-transform duration-150" />
@@ -131,7 +131,7 @@ const firstScreenshot: Screenshot | undefined = screenshots[0];
           <div class="relative aspect-video overflow-hidden rounded-xl bg-black/10 group/car mb-2">
             {screenshots.map(({ file, label, path }: Screenshot, idx: number) => (
               <a
-                href={`${basics.url}${path}/${file}`}
+                href={`${base_url}${path}/${file}`}
                 data-fancybox={galleryId}
                 data-caption={label}
                 data-index={String(idx)}
@@ -141,7 +141,7 @@ const firstScreenshot: Screenshot | undefined = screenshots[0];
                 ]}
               >
                 <img
-                  src={`${basics.url}${path}/${file}`}
+                  src={`${base_url}${path}/${file}`}
                   alt={label}
                   class="h-full w-full object-contain"
                   loading={idx === 0 ? "eager" : "lazy"}
@@ -205,7 +205,7 @@ const firstScreenshot: Screenshot | undefined = screenshots[0];
                   ]}
                 >
                   <img
-                    src={`${basics.url}${path}/${file}`}
+                    src={`${base_url}${path}/${file}`}
                     alt={label}
                     class="h-full w-full object-contain"
                     loading="lazy"
@@ -255,7 +255,7 @@ const firstScreenshot: Screenshot | undefined = screenshots[0];
 
       <!-- Footer actions -->
       <div class="flex flex-wrap items-center gap-4 border-t border-skin-muted/20 pt-6 print:hidden">
-        <a href={backUrl} class="group flex items-center gap-2 text-sm text-skin-muted hover:text-skin-hue transition-colors">
+        <a href={base_url} class="group flex items-center gap-2 text-sm text-skin-muted hover:text-skin-hue transition-colors">
           <Icon name="ri:arrow-left-line" class="h-4 w-4 group-hover:-translate-x-0.5 transition-transform duration-150" />
           Back to CV
         </a>
