@@ -6,11 +6,11 @@
     "main_label": "Engineer",
     "secondary_label": "Software",
     "other_label": "AI/ML",
-    "image": "me_coding.png",
-    "image_bg": "Concept2Code.png",
+    "image": "/me_coding.png",
+    "image_bg": "/Concept2Code.png",
     "email": "vizmara@gmail.com",
     "theme": "batman",
-    "url": "https://seanvizm.github.io/astro-mycv/",
+    "url": "https://seanvizm.github.io/astro-mycv",
     "summary": "Pushing business concept to code, solve the problem, innovate and keeping things simple. This is me. 🌀",
     "location": {
       "city": "",
@@ -40,7 +40,7 @@
         "icon": "mdi:web",
         "color": "#929AAB",
         "username": "www",
-        "url": "https://seanvizm.github.io/astro-mycv/"
+        "url": "https://seanvizm.github.io/astro-mycv"
       }
     ]
   },
@@ -346,25 +346,25 @@
           "icon": "mdi:microsoftazure",
           "title": "Microsoft Azure AI Essentials Professional Certificate",
           "url": "https://www.linkedin.com/learning/certificates/91f0050d0b8bb0dcf037f0aa55333cafcb2a6ec788e4d284118c5e90dabdc591",
-          "imageSrc": "https://seanvizm.github.io/astro-mycv/certificates/azure_ai.png"
+          "imageSrc": "/certificates/azure_ai.png"
         },
         {
           "icon": "mdi:lambdatest",
           "title": "TestMu AI Test Automation Professional Certificate",
           "url": "https://www.linkedin.com/learning/certificates/258e88930a0e6c6a3b78182247cd7146f7c3e61e1c2ce3efb4510a01576093d6",
-          "imageSrc": "https://seanvizm.github.io/astro-mycv/certificates/testmu_ai.png"
+          "imageSrc": "/certificates/testmu_ai.png"
         },
         {
           "icon": "mdi:github",
           "title": "Career Essentials in Github Professional Certificate",
           "url": "https://www.linkedin.com/learning/certificates/8d346614aa55164a1b9774e5c818dea24d58ce15610ba809579177e295d0ba11",
-          "imageSrc": "https://seanvizm.github.io/astro-mycv/certificates/github.png"
+          "imageSrc": "/certificates/github.png"
         },
         {
           "icon": "mdi:docker",
           "title": "Docker Foundations Professional Certificate",
           "url": "https://www.linkedin.com/learning/certificates/10c5fe79d57fa14ae0d26c940a02bd36f1427cd56643480bc6c32a8554fca522",
-          "imageSrc": "https://seanvizm.github.io/astro-mycv/certificates/docker.png"
+          "imageSrc": "/certificates/docker.png"
         }
       ]
     },{
@@ -785,7 +785,7 @@
         "Tailwind": "mdi:tailwind",
         "Daisy UI": "simple-icons:daisyui"
       },
-      "url": "https://seanvizm.github.io/astro-mycv/",
+      "url": "https://seanvizm.github.io/astro-mycv",
       "github": "https://github.com/seanvizm/astro-mycv"
     },
     {

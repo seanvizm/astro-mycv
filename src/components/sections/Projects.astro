@@ -47,7 +47,8 @@ function slugify(name: string): string {
                 <div class="flex items-center gap-2">
                   <a
                     data-ccursor="lift"
-                    href={`${import.meta.env.BASE_URL}/projects/${slugify(name)}`}
+                    // href={`${import.meta.env.BASE_URL}/projects/${slugify(name)}`}
+                    href={`${basics.url}/projects/${slugify(name)}`}
                     title={`View "${name}" full details page`}
                     aria-label={`View ${name} full details`}
                     class="opacity-60 hover:opacity-100 hover:text-skin-hue transition-all"
@@ -77,7 +78,7 @@ function slugify(name: string): string {
                   <div class="relative rounded-md overflow-hidden aspect-video bg-black/10 group/car mb-2">
                     {screenshots.map(({ file, label, path }: { file: string; label: string; path: string }, idx: number) => (
                       <a
-                        href={`${basics.url}${path}/${file}`}
+                        href={`${basics.url}/${path}/${file}`}
                         data-fancybox={`gallery-${name.replace(/[^a-z0-9]/gi, '-')}`}
                         data-caption={label}
                         data-index={String(idx)}
@@ -87,7 +88,7 @@ function slugify(name: string): string {
                         ]}
                       >
                         <img
-                          src={`${basics.url}${path}/${file}`}
+                          src={`${basics.url}/${path}/${file}`}
                           alt={label}
                           class="w-full h-full object-contain"
                           loading={idx === 0 ? "eager" : "lazy"}
@@ -151,7 +152,7 @@ function slugify(name: string): string {
                           ]}
                         >
                           <img
-                            src={`${basics.url}${path}/${file}`}
+                            src={`${basics.url}/${path}/${file}`}
                             alt={label}
                             class="w-full h-full object-contain"
                             loading="lazy"

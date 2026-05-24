@@ -1,6 +1,6 @@
 ---
 import Section from '../Section.astro'
-import { certificates } from '@mycvdata'
+import { basics, certificates } from '@mycvdata'
 import { Icon } from 'astro-icon/components'
 import { Image } from 'astro:assets'
 
@@ -38,7 +38,7 @@ import { Image } from 'astro:assets'
                                   class='scale-100 w-64'
                                   height={376}
                                   width={408}}
-                                  src={imageSrc}
+                                  src={basics.url + imageSrc}
                                   alt={title}
                                   loading='lazy' />)}
                               </figure>

@@ -35,7 +35,7 @@ const {
 } = project;
 
 const galleryId = `gallery-${name.replace(/[^a-z0-9]/gi, "-")}`;
-const backUrl = import.meta.env.BASE_URL;
+const backUrl = basics.url; //import.meta.env.BASE_URL;
 const firstScreenshot: Screenshot | undefined = screenshots[0];
 ---
 
